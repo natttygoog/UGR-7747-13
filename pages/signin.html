@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name='description' content='a chat app that have more features' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../font-awesome/css/fontawesome.css" rel="stylesheet" />
+    <!-- I use font-awesome icons ,because they are easy use and make my code clean. -->
+    <link href="../font-awesome/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css">
+    <script  type="module"  defer src="../script/signInScript.js"></script>
+    <title>HiChat | FAQ.</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header header-mode header-sticky">
+      <nav class="nav">
+        <div class="nav-logo">
+          <a href="#">
+            <i class="nav-logo__icon fa-brands fa-rocketchat"></i>
+            <span class="nav-logo__title">HiChat</span>
+          </a>
+        </div>
+        <div class="nav-link-box">
+          <ul class="nav-links">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./features.html">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./FAQ.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About us</a>
+            </li>
+            <li class="nav-item nav-item__signin">
+              <a class="btn btn--border" href="#">Sing in</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn--fill" href="../index.html#getStarted">Get started</a>
+            </li>
+            <i class="nav-close fa-regular fa-circle-xmark"></i>
+          </ul>
+        </div>
+        <div class="nav-hum-berger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+       <section class="section-signIn">
+    <div class="form-box">
+        <h2 class="heading-tertiary">Sign in</h2>
+        <form class="form" action="">
+            <label class="label label-email" for="email">Email</label>
+            <input
+              class="input form-input--email"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="aa@aa.com"
+              required
+            />
+            <p class="form-Validation form-Validation-email">&nbsp;</p>
+            <label class="label label-password" for="password">Password</label>
+            <input
+              class="input form-input--password"
+              type="password"
+              name="password"
+              id="password"
+              minlength="8"
+              required
+            />
+            <p class="form-Validation form-Validation-password">&nbsp;</p>
+            <button type="submit" class="btn btn--fill btn--signin" >Sign in</button>
+        </form>
+
+        
+    </div>
+       </section>
+  </main>
+
+  <!--page footer  -->
+  <footer class="section-footer">
+    
+    <div class="footer-col">
+      <div class="nav-logo">
+      <a  href="#">
+        <i class="nav-logo__icon fa-brands fa-rocketchat"></i>
+        <span class="nav-logo__title">HiChat</span>
+      </a>
+    </div>
+      <div class="footer-social-media">
+        <a href="www.facebook.com/natty"> <i class="fa-brands fa-facebook"></i> <span>facebook</span> </a>
+        <a href="www.facebook.com/messager/natty"> <i class="fa-brands fa-facebook-messenger"></i><span>messager</span> </a>
+        <a href="www.twitter.com/natty"> <i class="fa-brands fa-twitter"></i> <span>twitter</span> </a>
+        <a href="www.linkdin.com/natty"><i class="fa-brands fa-linkedin"></i><span>linkdin</span></a>
+      </div>
+      <p class="footer-copyright">
+        Copyright &copy; 2022 by , HiChat Inc. All rightsreserved.
+      </p>
+    </div>
+  <nav class="footer-col">
+    <h3 class="footer-heading">contact us</h3>
+    <address class="footer-address">King George VI Av. /AR_06_1002
+      Av. , Addis Ababa University ,4 kilo
+      campas.
+      </address>
+    <a href="tel:+251920123302" class="footer-nav-link">+251-920-123-302</a>
+    <a href="mailto:natnaell70a@gmail.com" class="footer-nav-link"> natnaell70a@gmail.com</a>
+  </nav>
+
+  <nav class="footer-col">
+    <h3 class="footer-heading">Overview</h3>
+    <ul class="footer-nav-links">
+    <li class="footer-nav-item">
+      <a class="footer-nav-link" href="../index.html">Home</a>
+    </li>
+    <li class="footer-nav-item">
+      <a class="footer-nav-link" href="./features.html">Features</a>
+    </li>
+    <li class="footer-nav-item">
+      <a class="footer-nav-link" href="./pricing.html">Pricing</a>
+    </li>
+    <li class="footer-nav-item">
+      <a class="footer-nav-link" href="./FAQ.html">FAQ</a>
+    </li>
+  </ul>
+  </nav>
+   
+  <nav class="footer-col">
+    <h3 class="footer-heading">Account</h3>
+    <ul class="footer-nav-links">
+    <li class="footer-nav-item">
+      <a class="footer-nav-link" href="../index.html#getStarted">Create account</a>
+    </li>
+    <li class="footer-nav-item">
+      <a class="footer-nav-link" href="#">Sign in</a>
+    </li>
+  </ul>
+  </nav>
+
+  <nav class="footer-col">
+    <h3 class="footer-heading">Support</h3>
+    <ul class="footer-nav-links">
+    <li class="footer-nav-item">
+      <a class="footer-nav-link" href="./contact.html">Contact Us</a>
+    </li>
+    <li class="footer-nav-item">
+      <a class="footer-nav-link" href="./about.html">About Us</a>
+    </li>
+  </ul>
+  </nav>
+</footer>
+  </body>
+</html>
+</div>

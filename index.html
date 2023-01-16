@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="a chat app that have more features" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="./font-awesome/css/all.css" rel="stylesheet" />
+    <link href="./font-awesome/css/fontawesome.css" rel="stylesheet" />
+    <!-- I use font-awesome icons ,because they are easy use and make my code clean. -->
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="module" defer src="./script/script.js"></script>
+    <title>HiChat | chat with our app.</title>
+  </head>
+  <body>
+    <!-- page header -->
+    <div class="container-header-hero">
+      <header class="header">
+        <nav class="nav">
+          <div class="nav-logo">
+            <a href="#">
+              <i class="nav-logo__icon fa-brands fa-rocketchat"></i>
+              <span class="nav-logo__title">HiChat</span>
+            </a>
+          </div>
+          <div class="nav-link-box">
+            <ul class="nav-links">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/features.html">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/FAQ.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contact.html">Contacts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/about.html">About us</a>
+              </li>
+              <li class="nav-item nav-item__signin">
+                <a class="btn btn--border" href="./pages/signin.html"
+                  >Sing in</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="btn btn--fill" href="#getStarted">Get started</a>
+              </li>
+              <i class="nav-close fa-regular fa-circle-xmark"></i>
+            </ul>
+          </div>
+          <div class="nav-hum-berger">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+      </header>
+      <!-- hero-section -->
+      <section class="section-hero">
+        <div class="grid grid-col-2">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">Make Your Chat Private.</h1>
+            <p class="paragraph">
+              Hichat is a live chat app with new features that make your chat
+              easy. Hichat allow live chats and make chats private under the
+              hude.
+            </p>
+            <figure class="ceo-audio__box">
+              <audio class="ceo-audio">
+                <source src="./src/audio.mp3" type="audio/mpeg" />
+                <track
+                  label="English"
+                  kind="subtitles"
+                  srclang="en"
+                  src="./src/audio.vtt"
+                  default
+                />
+              </audio>
+              <figcaption class="ceo-audio-caption">
+                <i class="ceo-audio-icon fa-regular fa-play"></i>
+                <span class="ceo-audio__title">Listen the Creator</span>
+              </figcaption>
+            </figure>
+
+            <div class="hero-links">
+              <a class="btn btn--fill" href="#getStarted">Get started</a>
+              <a class="btn btn--border" href="#features"
+                >Learn more &downarrow;</a
+              >
+            </div>
+          </div>
+
+          <div class="hero-imgs">
+            <div class="hero-img-box">
+              <img
+                class="hero-img"
+                src="./src/hero2.jpg"
+                alt="a person chating on personal computer"
+              />
+              <img
+                class="hero-img hero-img-2"
+                src="./src/hero1.jpg"
+                alt="a person chating on mobile phone"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- featured section -->
+
+      <section class="section-featured">
+        <h2 class="featured-heading">As Featured In</h2>
+        <div class="featured-logos">
+          <img
+            class="featured-logo"
+            src="./src/ethiopia-carta.webp"
+            alt="google logo"
+          />
+          <img
+            class="featured-logo"
+            src="./src/Ethiopia-airlines.png"
+            alt="ethiopia instrance plc logo"
+          />
+          <img
+            class="featured-logo"
+            src="./src/mint.png"
+            alt="minstry of technoloy and innovation in ethiopia logo"
+          />
+          <img
+            class="featured-logo"
+            src="./src/Ethiopia-technology-minstary.webp"
+            alt="addis abeba university logo"
+          />
+          <img
+            class="featured-logo"
+            src="./src/google.png"
+            alt="addis abeba university logo"
+          />
+        </div>
+      </section>
+
+      <!-- intro section -->
+
+      <section class="section-intro">
+        <div class="grid grid-col-2">
+          <div class="intro-image-box">
+            <img
+              class="intro-image"
+              src="./src/intro.jpg"
+              width="600px"
+              alt=" a person chat on personal computer"
+            />
+            <div class="intro-video-play-btn">
+              <i class="intro-video-icon fa-regular fa-circle-play"></i>
+            </div>
+          </div>
+
+          <div class="intro-text">
+            <h2 class="heading-secondary">Quick intro</h2>
+            <p class="paragraph">
+              Hichat is new chat app that make your live much easier on chat
+              with friends.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <main>
+      <!-- features section-->
+      <section id="features" class="section-features">
+        <h2 class="heading-secondary">Features</h2>
+        <div class="features grid grid-col-4">
+          <div class="feature-box">
+            <i class="feature-icon fa-regular fa-wave-pulse"></i>
+            <h3 class="heading-tertiary">Live chat</h3>
+            <p class="feature-description">
+              you get an immediate respones from every activity your do.
+            </p>
+          </div>
+
+          <div class="feature-box">
+            <i class="feature-icon fa-regular fa-user-group"></i>
+            <h3 class="heading-tertiary">make group</h3>
+            <p class="feature-description">
+              you can create groups for your team and discuss on your issues.
+            </p>
+          </div>
+
+          <div class="feature-box">
+            <i class="feature-icon fa-regular fa-heart"></i>
+            <h3 class="heading-tertiary">Saved data</h3>
+            <p class="feature-description">
+              Every data that you put is under our protection, our server is
+              more reliable.
+            </p>
+          </div>
+
+          <div class="feature-box">
+            <i class="feature-icon fa-regular fa-eye-slash"></i>
+            <h3 class="heading-tertiary">Hide profile</h3>
+            <p class="feature-description">
+              You can make your profile info hidden, if you need more privacy.
+            </p>
+          </div>
+        </div>
+        <div class="feature-link-box">
+          <a class="btn btn--link" href="./pages/features.html"
+            >More features &rarr;</a
+          >
+        </div>
+      </section>
+
+      <!-- testimonial-section -->
+      <section class="section-testimonial">
+        <h2 class="heading-secondary u-margin-left-big">Testimonials</h2>
+        <div class="testimonial-box">
+          <div class="testimonials">
+            <div data-number="1" class="testimonial">
+              <img
+                class="testimonial-img"
+                src="./src/customer-1.jpg"
+                alt="customer photo"
+              />
+              <div class="testimonial-text">
+                <blockquote class="testimonial-quote">
+                  " This app make my live easy, I got my wife by the app. Thanks
+                  to the developers."
+                </blockquote>
+                <p class="testimonial-author">natnaell .A</p>
+              </div>
+            </div>
+            <div data-number="2" class="testimonial">
+              <img
+                class="testimonial-img"
+                src="./src/customer-2.jpg"
+                alt="customer photo"
+              />
+              <div class="testimonial-text">
+                <blockquote class="testimonial-quote">
+                  " I work on startup company, this app help us to our team to
+                  work togather in home."
+                </blockquote>
+                <p class="testimonial-author">hana .B</p>
+              </div>
+            </div>
+            <div data-number="3" class="testimonial">
+              <img
+                class="testimonial-img"
+                src="./src/customer-3.jpg"
+                alt="customer photo"
+              />
+              <div class="testimonial-text">
+                <blockquote class="testimonial-quote">
+                  " I like the instant live chat feature. this app has new
+                  features not in others."
+                </blockquote>
+                <p class="testimonial-author">Kebede .C</p>
+              </div>
+            </div>
+            <div data-number="4" class="testimonial">
+              <img
+                class="testimonial-img"
+                src="./src/customer-4.jpg"
+                alt="customer photo"
+              />
+              <div class="testimonial-text">
+                <blockquote class="testimonial-quote">
+                  "This app is more flexable to use. I like most features, hide
+                  profile feature is the best one."
+                </blockquote>
+                <p class="testimonial-author">Daniel .A</p>
+              </div>
+            </div>
+
+            <div data-number="5" class="testimonial">
+              <img
+                class="testimonial-img"
+                src="./src/customer-5.jpg"
+                alt="customer photo"
+              />
+              <div class="testimonial-text">
+                <blockquote class="testimonial-quote">
+                  "This app is more flexable to use. I like most features, hide
+                  profile feature is the best one."
+                </blockquote>
+                <p class="testimonial-author">Daniel .A</p>
+              </div>
+            </div>
+
+            <div data-number="6" class="testimonial">
+              <img
+                class="testimonial-img"
+                src="./src/customer-6.jpg"
+                alt="customer photo"
+              />
+              <div class="testimonial-text">
+                <blockquote class="testimonial-quote">
+                  "This app is more flexable to use. I like most features, hide
+                  profile feature is the best one."
+                </blockquote>
+                <p class="testimonial-author">Daniel .A</p>
+              </div>
+            </div>
+
+            <div data-number="7" class="testimonial">
+              <img
+                class="testimonial-img"
+                src="./src/customer-7.jpg"
+                alt="customer photo"
+              />
+              <div class="testimonial-text">
+                <blockquote class="testimonial-quote">
+                  "This app is more flexable to use. I like most features, hide
+                  profile feature is the best one."
+                </blockquote>
+                <p class="testimonial-author">Daniel .A</p>
+              </div>
+            </div>
+
+            <div data-number="8" class="testimonial">
+              <img
+                class="testimonial-img"
+                src="./src/customer-8.jpg"
+                alt="customer photo"
+              />
+              <div class="testimonial-text">
+                <blockquote class="testimonial-quote">
+                  "This app is more flexable to use. I like most features, hide
+                  profile feature is the best one."
+                </blockquote>
+                <p class="testimonial-author">Daniel .A</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-btn testimonial-btn-left">
+            <i class="fa-light fa-circle-left">&nbsp;</i>
+          </div>
+          <div class="testimonial-btn testimonial-btn-right">
+            <i class="fa-light fa-circle-right">&nbsp;</i>
+          </div>
+        </div>
+        <div class="circle-btns">
+          <div data-num="1" class="circle-btn">&nbsp;</div>
+          <div data-num="2" class="circle-btn">&nbsp;</div>
+          <div data-num="3" class="circle-btn">&nbsp;</div>
+          <div data-num="4" class="circle-btn">&nbsp;</div>
+          <div data-num="5" class="circle-btn">&nbsp;</div>
+          <div data-num="6" class="circle-btn">&nbsp;</div>
+          <div data-num="7" class="circle-btn">&nbsp;</div>
+        </div>
+      </section>
+
+      <!-- getStarted-section -->
+
+      <section id="getStarted" class="section-getStarted">
+        <h2 class="heading-secondary">Get Started</h2>
+
+        <div class="grid grid-col-2">
+          <div class="getStarted-text">
+            <h2 class="heading-tertiary">Get Started HiChat Now</h2>
+            <p class="getStarted-paragraph">
+              Create a free account and Make your first try.
+            </p>
+          </div>
+          <div class="form-box">
+            <h3 class="heading-tertiary">Create account</h3>
+            <form class="form" action="">
+              <label class="label getStarted-label-username" for="username"
+                >Username</label
+              >
+              <input
+                class="input form-input--username"
+                type="text"
+                name="Username"
+                id="username"
+                placeholder="nak bell"
+                required
+              />
+              <p class="form-Validation form-Validation-name">&nbsp;</p>
+              <label class="label getStarted-label-email" for="email"
+                >Email</label
+              >
+              <input
+                class="input form-input--email"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="aa@aa.com"
+                required
+              />
+              <p class="form-Validation form-Validation-email">&nbsp;</p>
+
+              <label class="label form-label--password" for="password"
+                >Password</label
+              >
+              <input
+                class="input form-input--password"
+                type="password"
+                name="password"
+                id="password"
+                minlength="8"
+                required
+              />
+              <p class="form-Validation form-Validation-password">&nbsp;</p>
+              <label
+                class="label getStarted-label-confirmPassword"
+                for="confirmPassword"
+                >Confirm password</label
+              >
+              <input
+                class="input form-input--confirm-password"
+                type="password"
+                name="confirmPassword"
+                id="confirmPassword"
+                required
+              />
+              <p class="form-Validation form-Validation-confirm-password">
+                &nbsp;
+              </p>
+              <button class="btn btn--fill btn--create-account" type="submit">
+                Create Account
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- pricing-section -->
+      <section class="section-pricing">
+        <h2 class="heading-secondary">Pricing</h2>
+        <div class="prices grid grid-col-3">
+          <div class="pricing-box">
+            <h2 class="pricing-heading">Standard</h2>
+
+            <p class="pricing-value"><span>$</span>19</p>
+            <p class="pricing-description">per month ,$0.74 per day</p>
+            <a class="btn btn--fill" href="#"> Add to Cart</a>
+          </div>
+
+          <div class="pricing-box pricing-box--premium">
+            <h2 class="pricing-heading">Premium</h2>
+            <p class="pricing-value"><span>$ </span>49</p>
+            <p class="pricing-description">per month ,$1.50 per day</p>
+            <a class="btn btn--fill" href="#"> Add to Cart</a>
+          </div>
+
+          <div class="pricing-box">
+            <h2 class="pricing-heading">Free</h2>
+            <p class="pricing-value"><span>$</span>0</p>
+            <p class="pricing-description">per month ,$0 per day</p>
+            <a class="btn btn--fill" href="#"> Add to Cart</a>
+          </div>
+        </div>
+        <div class="link-box">
+          <a class="btn btn--link" href="./pages/pricing.html"
+            >Compare pricings</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- page footer -->
+    <footer class="section-footer">
+      <div class="footer-col">
+        <div class="nav-logo">
+          <a href="#">
+            <i class="nav-logo__icon fa-brands fa-rocketchat"></i>
+            <span class="nav-logo__title">HiChat</span>
+          </a>
+        </div>
+        <div class="footer-social-media">
+          <a href="www.facebook.com/natty">
+            <i class="fa-brands fa-facebook"></i> <span>facebook</span>
+          </a>
+          <a href="www.facebook.com/messager/natty">
+            <i class="fa-brands fa-facebook-messenger"></i><span>messager</span>
+          </a>
+          <a href="www.twitter.com/natty">
+            <i class="fa-brands fa-twitter"></i> <span>twitter</span>
+          </a>
+          <a href="www.linkdin.com/natty"
+            ><i class="fa-brands fa-linkedin"></i><span>linkdin</span></a
+          >
+        </div>
+        <p class="footer-copyright">
+          Copyright &copy; 2022 by , HiChat Inc. All rightsreserved.
+        </p>
+      </div>
+      <nav class="footer-col">
+        <h3 class="footer-heading">contact us</h3>
+        <address class="footer-address">
+          King George VI Av. /AR_06_1002 Av. , Addis Ababa University ,4 kilo
+          campas.
+        </address>
+        <a href="tel:+251920123302" class="footer-nav-link">+251-920-123-302</a>
+        <a href="mailto:natnaell70a@gmail.com" class="footer-nav-link">
+          natnaell70a@gmail.com</a
+        >
+      </nav>
+
+      <nav class="footer-col">
+        <h3 class="footer-heading">Overview</h3>
+        <ul class="footer-nav-links">
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#">Home</a>
+          </li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="./pages/features.html">Features</a>
+          </li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="./pages/pricing.html">Pricing</a>
+          </li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="./pages/FAQ.html">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="footer-col">
+        <h3 class="footer-heading">Account</h3>
+        <ul class="footer-nav-links">
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#getStarted">Create account</a>
+          </li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="./pages/signin.html">Sign in</a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="footer-col">
+        <h3 class="footer-heading">Support</h3>
+        <ul class="footer-nav-links">
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="./pages/contact.html"
+              >Contact Us</a
+            >
+          </li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="./pages/about.html">About Us</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+    <div class="intro-video-box">
+      <video class="intro-video" controls>
+        <source src="./src/video.webm" type="video/webm" />
+        <source src="./src/video.mp4" type="video/mp4" />
+        <track
+          label="English"
+          kind="subtitles"
+          srclang="en"
+          src="./src/video.vtt"
+          default
+        />
+      </video>
+      <div class="intro-close">
+        <i class="fa-regular fa-circle-xmark"></i>
+      </div>
+    </div>
+
+    <div class="overlay"></div>
+  </body>
+</html>
