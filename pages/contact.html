@@ -10,7 +10,7 @@
     <!-- I use font-awesome icons ,because they are easy use and make my code clean. -->
     <link href="../font-awesome/css/all.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css">
-    <script type="module" defer src="../script/menuScript.js"></script>
+    <script type="module" defer src="../script/contactScript.js"></script>
     <title>HiChat | FAQ.</title>
   </head>
   <body>
@@ -44,7 +44,7 @@
               <a class="nav-link" href="./about.html">About us</a>
             </li>
             <li class="nav-item nav-item__signin">
-              <a class="btn btn--border" href="./signin.html">Sing in</a>
+              <a class="btn btn--border" href="./signin.html">Sign in</a>
             </li>
             <li class="nav-item">
               <a class="btn btn--fill" href="../index.html#getStarted">Get started</a>
@@ -90,7 +90,7 @@
             <div class="contact-name">
               <div class="contact-firstname">
             <input
-              class="input contact-input-email"
+              class="input form-input--firstName"
               type="text"
               name="fristName"
               id="fristName"
@@ -98,36 +98,38 @@
               required
             />
             <label class="label contact-label-firstName" for="fristName">First</label>
+            <p class="form-Validation form-Validation-first">&nbsp;</p>
             </div>
             <div class="contact-lastname">
             <input
-              class="input contact-input-lastName"
+              class="input form-input--lastName"
               type="text"
               name="lastName"
               id="lastName"
               placeholder=""
               required
             />
+       
             <label class="label contact-label-lastName" for="lastName">Last</label>
+            <p class="form-Validation form-Validation-last">&nbsp;</p>
           </div>
           </div>
         
         
             <label class="label contact-label-email" for="email">email</label>
             <input
-              class="input contact-input-password"
+              class="input form-input--email"
               type="email"
               name="email"
               id="email"
               placeholder=""
               required
             />
+            <p class="form-Validation form-Validation-email">&nbsp;</p>
             <label class="label contact-label-email" for="comment">Comment</label>
-           <textarea class="contact-textarea contact-textarea-comment" name="comment" id="comment" cols="50" rows="10">
-
-            </textarea>
-            <br/>
-            <button class="btn btn--fill" type="submit">Submit</button>
+           <textarea class="contact-textarea form-textarea--comment" name="comment" id="comment" cols="50" rows="10"></textarea>
+            <p class="form-Validation form-Validation-comment">&nbsp;</p>
+            <button class="btn btn--fill btn--submit" type="submit">Submit</button>
         </form>
     </div>
         
@@ -207,6 +209,7 @@
   </ul>
   </nav>
 </footer>
+<div class="overlay"></div>
   </body>
 </html>
 </div>

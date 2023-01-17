@@ -15,6 +15,37 @@ html {
   overflow-x: hidden;
 }
 
+:root {
+  --color-primary: #145d6e;
+
+  --color-primary-light-1: #23a1be;
+  --color-primary-light-2: #29b8d8;
+  --color-primary-light-3: #5ecbe4;
+
+  --color-primary-dark-1: #0f4653;
+  --color-primary-dark-2: #0a2e36;
+  --color-primary-dark-3: #05181c;
+
+  --color-gray: #b0eefc;
+
+  --color-gray-light-1: #dff4f9;
+  --color-gray-light-2: #f3fbfd;
+
+  --color-gray-dark-0: #0f4450;
+  --color-gray-dark-1: #0a2e36;
+  --color-gray-dark-2: #05171b;
+  --color-gray-dark-3: #444;
+
+  --color-black: #000;
+  --color-white: #f9f9f9f9;
+  --color-border: #eee;
+  --color-gradient: linear-gradient(
+    to bottom right,
+    var(--color-gray),
+    var(--color-primary-light-3)
+  );
+}
+
 .container-box {
   display: grid;
   grid-template-columns: 0.16fr 1fr 2.5fr;
@@ -41,7 +72,7 @@ html {
 }
 .app__side-bar {
   /* width: 8rem; */
-  background-color: #166088;
+  background-color: var(--color-primary);
   height: 95vh;
   grid-row: 2/-1;
   grid-column: 1;
@@ -132,7 +163,7 @@ html {
 }
 .side__text {
   font-family: "Roboto";
-  color: #a9d8f1;
+  color: var(--color-gray);
   font-size: 1rem;
   font-weight: 100;
   letter-spacing: 1px;
@@ -193,7 +224,7 @@ html {
 .account--last-appear-date {
   font-size: 1.4rem;
   font-weight: 400;
-  color: #74889b;
+  color: var(--color-gray-dark-3);
 }
 .account-n-d {
   margin-top: -7px;
@@ -227,7 +258,7 @@ html {
 }
 .short-message {
   font-size: 1.4rem;
-  color: #6f7479;
+  color: var(--color-gray-dark-3);
 }
 
 /* message input */
@@ -309,7 +340,7 @@ html {
 }
 .message-paragraph {
   margin-bottom: 1rem;
-  color: #74889b;
+  color: var(--color-gray-dark-3);
 }
 .massage-content {
   font-size: 1.5rem;
@@ -323,8 +354,14 @@ html {
 .massage-date {
   font-size: 1.2rem;
   font-weight: 400;
-  color: #8898a9;
+  color: var(--color-gray-dark-3);
   margin-right: 5px;
+}
+
+label span,
+form label {
+  color: var(--color-gray-dark-3);
+  display: none;
 }
 /**********************************************/
 /**************** midea query *****************/

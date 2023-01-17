@@ -214,6 +214,7 @@ body {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
 }
 .popup-text {
   display: none;
@@ -235,7 +236,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1;
+  z-index: 3;
 }
 
 /* ########################### index page #############################################*/
@@ -1172,7 +1173,6 @@ th {
 .contact-name {
   display: flex;
   gap: 3.2rem;
-  margin-bottom: 2.4rem;
   width: 100%;
 }
 .contact-firstname,
@@ -1189,7 +1189,7 @@ th {
   width: 100%;
   border-radius: 5px;
   padding: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 .contact-textarea:focus {
   outline: none;

@@ -227,9 +227,11 @@ class App {
     document.body.classList.add("create-success");
     document.querySelector(".popup-close").addEventListener("click", () => {
       document.body.classList.remove("create-success");
+      popupText.remove();
     });
     overlay.addEventListener("click", () => {
       document.body.classList.remove("create-success");
+      popupText.remove();
     });
     inputEmail.value =
       inputUsername.value =
