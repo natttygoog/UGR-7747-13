@@ -6,78 +6,98 @@
     <meta name='description' content='a chat app that have more features' />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../font-awesome/css/fontawesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../font-awesome/css/all.css">
     <!-- I use font-awesome icons ,because they are easy use and make my code clean. -->
-    <link href="../font-awesome/css/all.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/style.css">
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <script
+      defer
+      src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+    ></script>
     <script type="module" defer src="../script/menuScript.js"></script>
     <title>HiChat | FAQ.</title>
   </head>
   <body>
     <!-- header -->
-    <header class="header header-mode header-sticky">
-      <nav class="nav">
-        <div class="nav-logo">
-          <a href="#">
+    <header class="header border-bottom position-fixed w-100" style="z-index: 2;">
+      <nav class="navbar navbar-expand-lg bg-light" >
+        <div class="container">
+          <a class="navbar-brand me-5" href="#">
             <i class="nav-logo__icon fa-brands fa-rocketchat"></i>
             <span class="nav-logo__title">HiChat</span>
           </a>
-        </div>
-        <div class="nav-link-box">
-          <ul class="nav-links">
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./features.html">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pricing.html">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./FAQ.html">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contact.html">Contacts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About us</a>
-            </li>
-            <li class="nav-item nav-item__signin">
-              <a class="btn btn--border" href="./signin.html">Sign in</a>
-            </li>
-            <li class="nav-item">
-              <a class="btn btn--fill" href="../index.html#getStarted">Get started</a>
-            </li>
-            <i class="nav-close fa-regular fa-circle-xmark"></i>
-          </ul>
-        </div>
-        <div class="nav-hum-berger">
-          <i class="fa-solid fa-bars"></i>
+          <button
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav"
+            aria-controls="nav"
+            aria-label="Expand Navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="nav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link " href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./features.html">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./FAQ.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./contact.html">Contacts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">About us</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav">
+              <li class="nav-item me-3 mb-3 mb-lg-0">
+                <a class="btn btn-outline-dark" href="./signin.html"
+                  >Sign in</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-dark" href="../index.html#getStarted">Get started</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
 
     <main>
      
-        <section class="section-about">
-        <div class="about-heading">
-        <h1 class="heading-primary">
+        <section class=" pt-5 pb-5 h-100">
+        <div class="container-fluid p-5 bg-info">
+        <h1 class="text-center p-5 mt-5 mb-5 fs-1">
             The Story of HiChat
         </h1>
         </div>
-        <div class="about-descrption-box">
-            <p class="about-description">
+        <div class="container pt-5  pb-5 p-md-5">
+            <p class="p-md-5">
                HiSoftware Plc. is a startup company, which bulid web and android softwares for the vast majority of customers, based in ethiopia. 
                Hichat is one of the software develope by Hisoftware teams. The CEO of Hisoftware Natnael Abebaw is a software engineer in Hisoftware Plc. and the main creator of Hihat.
                hiChat is a live web chat program which provide an instant and secure chat for it is customers. hiChat cames with new web chat features that most of our customes like.
                hiChat pricing is a more comfortable and have a bunch of choosees that you definitely find your fit.
             </p>
         </div>
-
-        <div class="about-ceo">
-          <div class="grid grid-col-2-l-sm">
-            <div class="about-ceo--info">
-                <img  class="about-ceo--img" src="../src/natty.jpg" width= "100px"  height= "100px" alt="Ceo of hiSoftware, Natnael Abebaw">
+        <div class=" border-top" >
+        <div class="container p-lg-5 pt-5 pb-5">
+          <div class="row p-lg-5">
+            <div class="col-lg-8">
+                <img  class="img-fluid w-25" src="../src/natty.jpg" width= "100px"  height= "100px" alt="Ceo of hiSoftware, Natnael Abebaw">
                  <div class="about-ceo--text">
 
                    <p>Natnael Abebaw is a software engineer in Hisoftware Plc. who creates this web chat appication.</p>  
@@ -87,90 +107,107 @@
                     </blockquote>
                  </div>
             </div>
-            <div class="ceo-social-media">
-              <a href="www.facebook.com/natty"> <i class="fa-brands fa-facebook"></i> <span>facebook</span> </a>
-              <a href="www.facebook.com/messager/natty"> <i class="fa-brands fa-facebook-messenger"></i><span>messager</span> </a>
-              <a href="www.twitter.com/natty"> <i class="fa-brands fa-twitter"></i> <span>twitter</span> </a>
-              <a href="www.linkdin.com/natty"><i class="fa-brands fa-linkedin"></i><span>linkdin</span></a>
+            <div class="col-lg-4 fs-1 d-flex flex-lg-column align-content-center gap-3">
+              <a class= "nav-link" href="www.facebook.com/natty"> <i class="fa-brands fa-facebook"></i> <span class="d-none">facebook</span> </a>
+              <a  class= "nav-link"  href="www.facebook.com/messager/natty"> <i class="fa-brands fa-facebook-messenger"></i><span class="d-none">messager</span> </a>
+              <a  class= "nav-link" href="www.twitter.com/natty"> <i class="fa-brands fa-twitter"></i> <span class="d-none">twitter</span> </a>
+              <a  class= "nav-link" href="www.linkdin.com/natty"><i class="fa-brands fa-linkedin"></i><span class="d-none">linkdin</span></a>
             </div>
-
+          </div>
       </div>
         </section>
 
   </main>
 
   <!--page footer  -->
-  <footer class="section-footer">
-    
-    <div class="footer-col">
-      <div class="nav-logo">
-      <a  href="#">
-        <i class="nav-logo__icon fa-brands fa-rocketchat"></i>
-        <span class="nav-logo__title">HiChat</span>
-      </a>
-    </div>
-      <div class="footer-social-media">
-        <a href="www.facebook.com/natty"> <i class="fa-brands fa-facebook"></i> <span>facebook</span> </a>
-        <a href="www.facebook.com/messager/natty"> <i class="fa-brands fa-facebook-messenger"></i><span>messager</span> </a>
-        <a href="www.twitter.com/natty"> <i class="fa-brands fa-twitter"></i> <span>twitter</span> </a>
-        <a href="www.linkdin.com/natty"><i class="fa-brands fa-linkedin"></i><span>linkdin</span></a>
+  <footer class="p-5 bg-info">
+    <div class="container p-5">
+      <div class="row gy-5">
+        <div class="col-xl-3 col-lg-6 d-flex flex-column">
+          <div>
+            <a class="navbar-brand fs-2" href="#">
+              <i class="nav-logo__icon fa-brands fa-rocketchat"></i>
+              <span class="nav-logo__title">HiChat</span>
+            </a>
+          </div>
+          <div class="d-flex fs-2 gap-2">
+            <a class="nav-link" href="www.facebook.com/natty">
+              <i class="fa-brands fa-facebook"></i>
+              <span class="d-none">facebook</span>
+            </a>
+            <a class="nav-link" href="www.facebook.com/messager/natty">
+              <i class="fa-brands fa-facebook-messenger"></i
+              ><span class="d-none">messager</span>
+            </a>
+            <a class="nav-link" href="www.twitter.com/natty">
+              <i class="fa-brands fa-twitter"></i>
+              <span class="d-none">twitter</span>
+            </a>
+            <a class="nav-link" href="www.linkdin.com/natty"
+              ><i class="fa-brands fa-linkedin"></i
+              ><span class="d-none">linkdin</span></a
+            >
+          </div>
+          <p class="mt-auto">
+            Copyright &copy; 2022 by , HiChat Inc. All rightsreserved.
+          </p>
+        </div>
+        <nav class="col-xl-3 col-lg-6">
+          <h3 class="mb-4">contact us</h3>
+          <address class="">
+            King George VI Av. /AR_06_1002 Av. , Addis Ababa University ,4
+            kilo campas.
+          </address>
+          <a href="tel:+251920123302" class="nav-link">+251-920-123-302</a>
+          <a href="mailto:natnaell70a@gmail.com" class="nav-link">
+            natnaell70a@gmail.com</a
+          >
+        </nav>
+
+        <nav class="col-xl-2 col-lg-4">
+          <h3 class="mb-4">Overview</h3>
+          <ul class="list-unstyled">
+            <li>
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li>
+              <a class="nav-link" href="./features.html">Features</a>
+            </li>
+            <li>
+              <a class="nav-link" href="./pricing.html">Pricing</a>
+            </li>
+            <li>
+              <a class="nav-link" href="./FAQ.html">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="col-xl-2 col-lg-4">
+          <h3 class="mb-4">Account</h3>
+          <ul class="list-unstyled">
+            <li>
+              <a class="nav-link" href="../index.html#getStarted">Create account</a>
+            </li>
+            <li>
+              <a class="nav-link" href="./signin.html">Sign in</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="col-xl-2 col-sm-4">
+          <h3 class="mb-4">Support</h3>
+          <ul class="list-unstyled">
+            <li>
+              <a class="nav-link" href="./contact.html">Contact Us</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <p class="footer-copyright">
-        Copyright &copy; 2022 by , HiChat Inc. All rightsreserved.
-      </p>
     </div>
-  <nav class="footer-col">
-    <h3 class="footer-heading">contact us</h3>
-    <address class="footer-address">King George VI Av. /AR_06_1002
-      Av. , Addis Ababa University ,4 kilo
-      campas.
-      </address>
-    <a href="tel:+251920123302" class="footer-nav-link">+251-920-123-302</a>
-    <a href="mailto:natnaell70a@gmail.com" class="footer-nav-link"> natnaell70a@gmail.com</a>
-  </nav>
-
-  <nav class="footer-col">
-    <h3 class="footer-heading">Overview</h3>
-    <ul class="footer-nav-links">
-    <li class="footer-nav-item">
-      <a class="footer-nav-link" href="../index.html">Home</a>
-    </li>
-    <li class="footer-nav-item">
-      <a class="footer-nav-link" href="./features.html">Features</a>
-    </li>
-    <li class="footer-nav-item">
-      <a class="footer-nav-link" href="./pricing.html">Pricing</a>
-    </li>
-    <li class="footer-nav-item">
-      <a class="footer-nav-link" href="./FAQ.html">FAQ</a>
-    </li>
-  </ul>
-  </nav>
-   
-  <nav class="footer-col">
-    <h3 class="footer-heading">Account</h3>
-    <ul class="footer-nav-links">
-    <li class="footer-nav-item">
-      <a class="footer-nav-link" href="../index.html#getStarted">Create account</a>
-    </li>
-    <li class="footer-nav-item">
-      <a class="footer-nav-link" href="./signin.html">Sign in</a>
-    </li>
-  </ul>
-  </nav>
-
-  <nav class="footer-col">
-    <h3 class="footer-heading">Support</h3>
-    <ul class="footer-nav-links">
-    <li class="footer-nav-item">
-      <a class="footer-nav-link" href="./contact.html">Contact Us</a>
-    </li>
-    <li class="footer-nav-item">
-      <a class="footer-nav-link" href="#">About Us</a>
-    </li>
-  </ul>
-  </nav>
-</footer>
+  </footer>
   </body>
 </html>
 </div>

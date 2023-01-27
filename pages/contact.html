@@ -9,51 +9,70 @@
     <link href="../font-awesome/css/fontawesome.css" rel="stylesheet" />
     <!-- I use font-awesome icons ,because they are easy use and make my code clean. -->
     <link href="../font-awesome/css/all.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/style.css">
-    <script type="module" defer src="../script/contactScript.js"></script>
+    <link
+    rel="stylesheet"
+    href="../node_modules/bootstrap/dist/css/bootstrap.css"
+  />
+  <script
+    defer
+    src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+  ></script>
     <title>HiChat | FAQ.</title>
   </head>
   <body>
     <!-- header -->
-    <header class="header header-mode header-sticky">
-      <nav class="nav">
-        <div class="nav-logo">
-          <a href="#">
+    <header class="header border-bottom position-fixed w-100" style="z-index: 2;">
+      <nav class="navbar navbar-expand-lg bg-light" >
+        <div class="container">
+          <a class="navbar-brand me-5" href="#">
             <i class="nav-logo__icon fa-brands fa-rocketchat"></i>
             <span class="nav-logo__title">HiChat</span>
           </a>
-        </div>
-        <div class="nav-link-box">
-          <ul class="nav-links">
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./features.html">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pricing.html">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./FAQ.html">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contacts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./about.html">About us</a>
-            </li>
-            <li class="nav-item nav-item__signin">
-              <a class="btn btn--border" href="./signin.html">Sign in</a>
-            </li>
-            <li class="nav-item">
-              <a class="btn btn--fill" href="../index.html#getStarted">Get started</a>
-            </li>
-            <i class="nav-close fa-regular fa-circle-xmark"></i>
-          </ul>
-        </div>
-        <div class="nav-hum-berger">
-          <i class="fa-solid fa-bars"></i>
+          <button
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav"
+            aria-controls="nav"
+            aria-label="Expand Navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="nav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link " href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./features.html">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./FAQ.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active " href="#">Contacts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About us</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav">
+              <li class="nav-item me-3 mb-3 mb-lg-0">
+                <a class="btn btn-outline-dark" href="./signin.html"
+                  >Sign in</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-dark" href="../index.html#getStarted">Get started</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
@@ -61,48 +80,50 @@
     <main>
 
         <!-- contact section -->
-       <section class="section-contact">
-    <div class="contacts">
-        <h2 class="heading-secondary u-center u-margin-bottom-big">Get in touch.</h2>
-        <div class="grid grid-col-2-sm-l">
+       <section class="p-lg-5 pt-5 pb-5">
+    <div class="container p-lg-5  pt-5 pb-5">
+        <h2 class="text-center fs-1 mb-5">Get in touch.</h2>
+        <div class="row gap-5">
 
-            <div class="contact-info">
-                <div class="contact-box">
-                <i class="contact-icon fa-regular fa-location-dot"></i>
+            <div class="col-lg-4 d-flex flex-column gap-5 text-center  border-end">
+                <div class="">
+                <i class="d-block fs-1 fa-regular fa-location-dot"></i>
                 <address class="contact-address">King George VI Av. /AR_06_1002
                     Av. , Addis Ababa University ,4 kilo
                     campas.
                     </address>
                 </div>
-                <div class="contact-box">
-                    <i class="contact-icon  fa-regular fa-envelope"></i>
-                    <a href="mailto:natnaell70a@gmail.com"  class="footer-nav-link" > natnaell70a@gmail.com</a>
+                <div class="">
+                    <i class="d-block fs-1 fa-regular fa-envelope"></i>
+                    <a href="mailto:natnaell70a@gmail.com"  class="nav-link" > natnaell70a@gmail.com</a>
                 </div>
 
-                <div class="contact-box">
-                    <i class="contact-icon  fa-regular fa-phone"></i>
-                    <a href="tel:+251920123302"  class="footer-nav-link" >+251-920-123-302</a>
+                <div class="">
+                    <i class=" d-block fs-1 fa-regular fa-phone"></i>
+                    <a href="tel:+251920123302"  class="nav-link" >+251-920-123-302</a>
                 </div>
             </div>
       
-        <form class="contact-form" action="">
-            <p class="label contact-label-name" >Name</p>
-            <div class="contact-name">
-              <div class="contact-firstname">
+        <form novalidate class="col-lg-7" action="">
+            <p class="form-label contact-label-name" >Name</p>
+
+            <div class="d-flex gap-3 mb-2">
+              <div class="w-50">
             <input
-              class="input form-input--firstName"
+              class="form-control form-input--firstName"
               type="text"
               name="fristName"
               id="fristName"
               placeholder=""
               required
             />
-            <label class="label contact-label-firstName" for="fristName">First</label>
-            <p class="form-Validation form-Validation-first">&nbsp;</p>
+            <label class="form-label contact-label-firstName" for="fristName">First</label>
+            <div class="invalid-feedback">Invalid firstname</div>
+            <div class="valid-feedback">correct firstname</div>
             </div>
-            <div class="contact-lastname">
+            <div class="w-50">
             <input
-              class="input form-input--lastName"
+              class="form-control form-input--lastName"
               type="text"
               name="lastName"
               id="lastName"
@@ -110,26 +131,32 @@
               required
             />
        
-            <label class="label contact-label-lastName" for="lastName">Last</label>
-            <p class="form-Validation form-Validation-last">&nbsp;</p>
+            <label class="form-label contact-label-lastName" for="lastName">Last</label>
+            <div class="invalid-feedback">Invalid lastname</div>
+            <div class="valid-feedback">correct lastname</div>
           </div>
           </div>
         
-        
-            <label class="label contact-label-email" for="email">email</label>
+           <div class="mb-3">
+            <label class="form-label contact-label-email" for="email">email</label>
             <input
-              class="input form-input--email"
+              class="form-control form-input--email"
               type="email"
               name="email"
               id="email"
               placeholder=""
               required
             />
-            <p class="form-Validation form-Validation-email">&nbsp;</p>
-            <label class="label contact-label-email" for="comment">Comment</label>
-           <textarea class="contact-textarea form-textarea--comment" name="comment" id="comment" cols="50" rows="10"></textarea>
-            <p class="form-Validation form-Validation-comment">&nbsp;</p>
-            <button class="btn btn--fill btn--submit" type="submit">Submit</button>
+            <div class="invalid-feedback">Invalid email</div>
+            <div class="valid-feedback">correct email</div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label contact-label-email" for="comment">Comment</label>
+           <textarea class="form-control form-textarea--comment" name="comment" id="comment"  required cols="50" rows="10"></textarea>
+           <div class="invalid-feedback">Invalid comment</div>
+           <div class="valid-feedback">correct comment</div>
+          </div>
+            <button class="btn btn-dark btn--submit" type="submit">Submit</button>
         </form>
     </div>
         
@@ -138,78 +165,103 @@
   </main>
 
   <!--page footer  -->
-  <footer class="section-footer">
-    
-    <div class="footer-col">
-      <div class="nav-logo">
-      <a  href="#">
-        <i class="nav-logo__icon fa-brands fa-rocketchat"></i>
-        <span class="nav-logo__title">HiChat</span>
-      </a>
-    </div>
-      <div class="footer-social-media">
-        <a href="www.facebook.com/natty"> <i class="fa-brands fa-facebook"></i> <span>facebook</span> </a>
-        <a href="www.facebook.com/messager/natty"> <i class="fa-brands fa-facebook-messenger"></i><span>messager</span> </a>
-        <a href="www.twitter.com/natty"> <i class="fa-brands fa-twitter"></i> <span>twitter</span> </a>
-        <a href="www.linkdin.com/natty"><i class="fa-brands fa-linkedin"></i><span>linkdin</span></a>
+  <footer class="p-5 bg-info">
+    <div class="container p-5">
+      <div class="row gy-5">
+        <div class="col-xl-3 col-lg-6 d-flex flex-column">
+          <div>
+            <a class="navbar-brand fs-2" href="#">
+              <i class="nav-logo__icon fa-brands fa-rocketchat"></i>
+              <span class="nav-logo__title">HiChat</span>
+            </a>
+          </div>
+          <div class="d-flex fs-2 gap-2">
+            <a class="nav-link" href="www.facebook.com/natty">
+              <i class="fa-brands fa-facebook"></i>
+              <span class="d-none">facebook</span>
+            </a>
+            <a class="nav-link" href="www.facebook.com/messager/natty">
+              <i class="fa-brands fa-facebook-messenger"></i
+              ><span class="d-none">messager</span>
+            </a>
+            <a class="nav-link" href="www.twitter.com/natty">
+              <i class="fa-brands fa-twitter"></i>
+              <span class="d-none">twitter</span>
+            </a>
+            <a class="nav-link" href="www.linkdin.com/natty"
+              ><i class="fa-brands fa-linkedin"></i
+              ><span class="d-none">linkdin</span></a
+            >
+          </div>
+          <p class="mt-auto">
+            Copyright &copy; 2022 by , HiChat Inc. All rightsreserved.
+          </p>
+        </div>
+        <nav class="col-xl-3 col-lg-6">
+          <h3 class="mb-4">contact us</h3>
+          <address class="">
+            King George VI Av. /AR_06_1002 Av. , Addis Ababa University ,4
+            kilo campas.
+          </address>
+          <a href="tel:+251920123302" class="nav-link">+251-920-123-302</a>
+          <a href="mailto:natnaell70a@gmail.com" class="nav-link">
+            natnaell70a@gmail.com</a
+          >
+        </nav>
+
+        <nav class="col-xl-2 col-lg-4">
+          <h3 class="mb-4">Overview</h3>
+          <ul class="list-unstyled">
+            <li>
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li>
+              <a class="nav-link" href="./features.html">Features</a>
+            </li>
+            <li>
+              <a class="nav-link" href="./pricing.html">Pricing</a>
+            </li>
+            <li>
+              <a class="nav-link" href="./FAQ.html">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="col-xl-2 col-lg-4">
+          <h3 class="mb-4">Account</h3>
+          <ul class="list-unstyled">
+            <li>
+              <a class="nav-link" href="../index.html#getStarted">Create account</a>
+            </li>
+            <li>
+              <a class="nav-link" href="./signin.html">Sign in</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="col-xl-2 col-sm-4">
+          <h3 class="mb-4">Support</h3>
+          <ul class="list-unstyled">
+            <li>
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li>
+              <a class="nav-link" href="./about.html">About Us</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <p class="footer-copyright">
-        Copyright &copy; 2022 by , HiChat Inc. All rightsreserved.
-      </p>
     </div>
-  <nav class="footer-col">
-    <h3 class="footer-heading">contact us</h3>
-    <address class="footer-address">King George VI Av. /AR_06_1002
-      Av. , Addis Ababa University ,4 kilo
-      campas.
-      </address>
-    <a href="tel:+251920123302" class="footer-nav-link">+251-920-123-302</a>
-    <a href="mailto:natnaell70a@gmail.com" class="footer-nav-link"> natnaell70a@gmail.com</a>
-  </nav>
-
-  <nav class="footer-col">
-    <h3 class="footer-heading">Overview</h3>
-    <ul class="footer-nav-links">
-    <li class="footer-nav-item">
-      <a class="footer-nav-link" href="../index.html">Home</a>
-    </li>
-    <li class="footer-nav-item">
-      <a class="footer-nav-link" href="./features.html">Features</a>
-    </li>
-    <li class="footer-nav-item">
-      <a class="footer-nav-link" href="./pricing.html">Pricing</a>
-    </li>
-    <li class="footer-nav-item">
-      <a class="footer-nav-link" href="./FAQ.html">FAQ</a>
-    </li>
-  </ul>
-  </nav>
-   
-  <nav class="footer-col">
-    <h3 class="footer-heading">Account</h3>
-    <ul class="footer-nav-links">
-    <li class="footer-nav-item">
-      <a class="footer-nav-link" href="../index.html#getStarted">Create account</a>
-    </li>
-    <li class="footer-nav-item">
-      <a class="footer-nav-link" href="./signin.html">Sign in</a>
-    </li>
-  </ul>
-  </nav>
-
-  <nav class="footer-col">
-    <h3 class="footer-heading">Support</h3>
-    <ul class="footer-nav-links">
-    <li class="footer-nav-item">
-      <a class="footer-nav-link" href="#">Contact Us</a>
-    </li>
-    <li class="footer-nav-item">
-      <a class="footer-nav-link" href="./about.html">About Us</a>
-    </li>
-  </ul>
-  </nav>
-</footer>
-<div class="overlay"></div>
+  </footer>
+  <script>
+    const form = document.querySelector("form");
+    form.addEventListener("submit", (e) => {
+      if (!form.checkValidity()) {
+        e.preventDefault();
+      }
+      form.classList.add("was-validated");
+    });
+  </script>
   </body>
 </html>
 </div>

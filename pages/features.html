@@ -7,249 +7,303 @@
     <link href="../font-awesome/css/fontawesome.css" rel="stylesheet" />
     <!-- I use font-awesome icons ,because they are easy use and make my code clean. -->
     <link href="../font-awesome/css/all.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/style.css">
-    <script type="module" defer src="../script/menuScript.js"></script>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <script
+      defer
+      src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+    ></script>
     <title>HiChat | Features.</title>
   </head>
+
+  <style>
+    .scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+.scrollbar::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 100px;
+}
+  </style>
   <body class="page-features">
     <!-- header -->
-    <header class="header header-mode header-sticky">
-      <nav class="nav">
-        <div class="nav-logo">
-          <a href="#">
+    <header class="header border-bottom position-fixed w-100" style="z-index: 2;">
+      <nav class="navbar navbar-expand-lg bg-light" >
+        <div class="container">
+          <a class="navbar-brand me-5" href="#">
             <i class="nav-logo__icon fa-brands fa-rocketchat"></i>
             <span class="nav-logo__title">HiChat</span>
           </a>
-        </div>
-        <div class="nav-link-box">
-          <ul class="nav-links">
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pricing.html">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./FAQ.html">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contact.html">Contacts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./about.html">About us</a>
-            </li>
-            <li class="nav-item nav-item__signin">
-              <a class="btn btn--border" href="./signin.html">Sign in</a>
-            </li>
-            <li class="nav-item">
-              <a class="btn btn--fill" href="../index.html#getStarted">Get started</a>
-            </li>
-            <i class="nav-close fa-regular fa-circle-xmark"></i>
+          <button
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav"
+            aria-controls="nav"
+            aria-label="Expand Navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="nav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link " href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./FAQ.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contacts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About us</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav">
+              <li class="nav-item me-3 mb-3 mb-lg-0">
+                <a class="btn btn-outline-dark" href="./signin.html"
+                  >Sign in</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-dark" href="../index.html#getStarted">Get started</a>
+              </li>
             </ul>
           </div>
-          <div class="nav-hum-berger">
-            <i class="fa-solid fa-bars"></i>
-          </div>
+        </div>
       </nav>
     </header>
-
     <main>
      
       <!-- feature section section  -->
-      <section class="section-features">
-        <div class="container">
-        <h2 class="heading-secondary u-center">Features</h2>
+      <section class="p-lg-5 p-sm-2 pt-5 pb-5">
+        <div class="container-lg pt-5">
+        <h2 class="text-center">Features</h2>
         
-        <form action="" class="feature-search--form">
-          <div class="search-box">
-            <label class = "label-search" for="search">search</label>
-            <input class = "feature-input feature-input-search" id = "search" type="text" placeholder="Search">
-           <button class = "feature-btn feature-btn-search" for="search"><i class="search-icon fa-regular fa-magnifying-glass"> <span>Search</span></i></button> 
+        <form action="" class=" text-center mb-3">
+          <div class="position-relative w-50 m-auto">
+            <label class = "d-none" for="search">search</label>
+            <input class = "form-control " id = "search" type="text" placeholder="Search">
+           <button class = "position-absolute top-50 end-0 translate-middle border-0 bg-transparent " for="search"><i class="search-icon fa-regular fa-magnifying-glass"> <span class="d-none">Search</span></i></button> 
           </div>
           </form>
-        <p class="feature-text">
+        <p class="text-center mb-5">
             There are a bunch of features their, you can search features and know the detail.
         </p>
 
-
-        <div class="features-box grid grid-col-2-sm-l">
-           <div class="side-bar">
-             <h3 class="side-heading">
+        <div class="container">
+        <div class="row border rounded-2 overflow-hidden">
+           <div class="col-lg-3 bg-dark text-light p-5">
+             <h3 class="mb-4">
                 Collections
              </h3>
-            <ul class="side-nav-buttons">
-            <li  class="side-nav-item side-nav-item-active"> 
+            <ul class="list-unstyled">
+            <li  class="mb-2"> 
             <i class="fa-regular fa-border-all"></i> 
             <span >All</span> 
-            <li class="side-nav-item"> 
+            <li class="mb-2"> 
             <i class="fa-regular fa-sparkles"></i>
             <span>New</span>      
-             <li class="side-nav-item"> 
+             <li class="mb-2"> 
             <i class="fa-regular fa-fire"></i>
             <span>Popular</span> 
-            <li class="side-nav-item"> 
+            <li class="mb-2"> 
               <i class="fa-regular fa-star"></i>
               <span >Featured</span>
             </ul>
         </div>
     
         
-        
-         <div class="features-all grid grid-col-3">
-          <div class="feature-box">
-            <i class="feature-icon fa-regular fa-wave-pulse"></i>
-            <h3 class="heading-tertiary">Live chat</h3>
-            <p class="feature-description">
+         <div class="col-lg-9 overflow-auto scrollbar">
+          <div class="container" style="height: 700px;">
+            <div class="row gap-4 justify-content-center pt-5 pb-5 " >
+
+          <div class="col-xl-3 col-md-4 card text-center pt-5 pb-5 p-3">
+            <i class="fs-1 mb-3 fa-regular fa-wave-pulse"></i>
+            <h3 class="mb-2">Live chat</h3>
+            <p class="">
               you get an immediate respones from every activity your do.
             </p>
           </div>
 
-          <div class="feature-box">
-            <i class="feature-icon fa-regular fa-user-group"></i>
-            <h3 class="heading-tertiary">Make group</h3>
-            <p class="feature-description">
+          <div class="col-xl-3 col-md-4 card text-center pt-5 pb-5 p-3">
+            <i class="fs-1 mb-3 fa-regular fa-user-group"></i>
+            <h3 class="mb-2">Make group</h3>
+            <p class="">
               you can create groups for your team and discuss on your issues.
             </p>
           </div>
 
-          <div class="feature-box">
-            <i class="feature-icon fa-regular fa-heart"></i>
-            <h3 class="heading-tertiary">Saved data</h3>
-            <p class="feature-description">
+          <div class="col-xl-3 col-md-4 card text-center pt-5 pb-5 p-3">
+            <i class="fs-1 mb-3 fa-regular fa-heart"></i>
+            <h3 class="mb-2">Saved data</h3>
+            <p class="">
               Every data that you put is under our protection, our server is
               more reliable.
             </p>
           </div>
 
-          <div class="feature-box">
-            <i class="feature-icon fa-regular fa-eye-slash"></i>
-            <h3 class="heading-tertiary">hide profile</h3>
-            <p class="feature-description">
+          <div class="col-xl-3 col-md-4 card text-center pt-5 pb-5 p-3">
+            <i class="fs-1 mb-3 fa-regular fa-eye-slash"></i>
+            <h3 class="mb-2">hide profile</h3>
+            <p class="">
               You can make your profile info hidden, if you need more privacy.
             </p>
           </div>
 
-          <div class="feature-box">
-            <i class="feature-icon fa-regular fa-house-night"></i>
-            <h3 class="heading-tertiary"> night mode</h3>
-            <p class="feature-description">
+          <div class="col-xl-3 col-md-4 card text-center pt-5 pb-5 p-3">
+            <i class="fs-1 mb-3 fa-regular fa-house-night"></i>
+            <h3 class="mb-2"> night mode</h3>
+            <p class="">
               At night, you not have to be decrease brightness, our app have a dark mode.
             </p>
           </div>
 
-          <div class="feature-box">
-            <i class=" feature-icon fa-regular fa-bell"></i>
-            <h3 class="heading-tertiary">Notification</h3>
-            <p class="feature-description">
+          <div class="col-xl-3 col-md-4 card text-center pt-5 pb-5 p-3">
+            <i class=" fs-1 mb-3 fa-regular fa-bell"></i>
+            <h3 class="mb-2">Notification</h3>
+            <p class="">
               An immediate Notification is the main apart of our app. you get fast Notifications.
             </p>
           </div>
 
-          <div class="feature-box">
-            <i class="feature-icon fa-regular fa-user-pen"></i>
-            <h3 class="heading-tertiary">Edit profile</h3>
-            <p class="feature-description">
+          <div class="col-xl-3 col-md-4 card text-center pt-5 pb-5 p-3">
+            <i class="fs-1 mb-3 fa-regular fa-user-pen"></i>
+            <h3 class="mb-2">Edit profile</h3>
+            <p class="">
               You can change your profile information as soon as you wanted..
             </p>
           </div>
 
-          <div class="feature-box">
-            <i class="feature-icon fa-regular fa-umbrella"></i>
-            <h3 class="heading-tertiary"> Privacy</h3>
-            <p class="feature-description">
+          <div class="col-xl-3 col-md-4 card text-center pt-5 pb-5 p-3">
+            <i class="fs-1 mb-3 fa-regular fa-umbrella"></i>
+            <h3 class="mb-2"> Privacy</h3>
+            <p class="">
               Your data are under high level encryption. you don't worry about your data.
             </p>
           </div>
 
-          <div class="feature-box">
+          <div class="col-xl-3 col-md-4 card text-center pt-5 pb-5 p-3">
            
-            <i class=" feature-icon fa-regular fa-book-open-reader"></i>
-            <h3 class="heading-tertiary"> Unread</h3>
-            <p class="feature-description">
+            <i class=" fs-1 mb-3 fa-regular fa-book-open-reader"></i>
+            <h3 class="mb-2"> Unread</h3>
+            <p class="">
              Unread messages are placed on on tag for you to get it easily.
             </p>
           </div>
-
+        </div>
+      </div>
+        </div>
       </div>
     </div>
-      </section>
+  </section>
   </main>
 
   <!--page footer  -->
-  <footer class="section-footer">
-    
-    <div class="footer-col">
-      <div class="nav-logo">
-      <a  href="#">
-        <i class="nav-logo__icon fa-brands fa-rocketchat"></i>
-        <span class="nav-logo__title">HiChat</span>
-      </a>
-    </div>
-      <div class="footer-social-media">
-        <a href="www.facebook.com/natty"> <i class="fa-brands fa-facebook"></i> <span>facebook</span> </a>
-        <a href="www.facebook.com/messager/natty"> <i class="fa-brands fa-facebook-messenger"></i><span>messager</span> </a>
-        <a href="www.twitter.com/natty"> <i class="fa-brands fa-twitter"></i> <span>twitter</span> </a>
-        <a href="www.linkdin.com/natty"><i class="fa-brands fa-linkedin"></i><span>linkdin</span></a>
+  <footer class="p-5 bg-info">
+    <div class="container p-5">
+      <div class="row gy-5">
+        <div class="col-xl-3 col-lg-6 d-flex flex-column">
+          <div>
+            <a class="navbar-brand fs-2" href="#">
+              <i class="nav-logo__icon fa-brands fa-rocketchat"></i>
+              <span class="nav-logo__title">HiChat</span>
+            </a>
+          </div>
+          <div class="d-flex fs-2 gap-2">
+            <a class="nav-link" href="www.facebook.com/natty">
+              <i class="fa-brands fa-facebook"></i>
+              <span class="d-none">facebook</span>
+            </a>
+            <a class="nav-link" href="www.facebook.com/messager/natty">
+              <i class="fa-brands fa-facebook-messenger"></i
+              ><span class="d-none">messager</span>
+            </a>
+            <a class="nav-link" href="www.twitter.com/natty">
+              <i class="fa-brands fa-twitter"></i>
+              <span class="d-none">twitter</span>
+            </a>
+            <a class="nav-link" href="www.linkdin.com/natty"
+              ><i class="fa-brands fa-linkedin"></i
+              ><span class="d-none">linkdin</span></a
+            >
+          </div>
+          <p class="mt-auto">
+            Copyright &copy; 2022 by , HiChat Inc. All rightsreserved.
+          </p>
+        </div>
+        <nav class="col-xl-3 col-lg-6">
+          <h3 class="mb-4">contact us</h3>
+          <address class="">
+            King George VI Av. /AR_06_1002 Av. , Addis Ababa University ,4
+            kilo campas.
+          </address>
+          <a href="tel:+251920123302" class="nav-link">+251-920-123-302</a>
+          <a href="mailto:natnaell70a@gmail.com" class="nav-link">
+            natnaell70a@gmail.com</a
+          >
+        </nav>
+
+        <nav class="col-xl-2 col-lg-4">
+          <h3 class="mb-4">Overview</h3>
+          <ul class="list-unstyled">
+            <li>
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li>
+              <a class="nav-link" href="./pricing.html">Pricing</a>
+            </li>
+            <li>
+              <a class="nav-link" href="./FAQ.html">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="col-xl-2 col-lg-4">
+          <h3 class="mb-4">Account</h3>
+          <ul class="list-unstyled">
+            <li>
+              <a class="nav-link" href="../index.html#getStarted">Create account</a>
+            </li>
+            <li>
+              <a class="nav-link" href="./signin.html">Sign in</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="col-xl-2 col-sm-4">
+          <h3 class="mb-4">Support</h3>
+          <ul class="list-unstyled">
+            <li>
+              <a class="nav-link" href="./contact.html">Contact Us</a>
+            </li>
+            <li>
+              <a class="nav-link" href="./about.html">About Us</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <p class="footer-copyright">
-        Copyright &copy; 2022 by , HiChat Inc. All rightsreserved.
-      </p>
     </div>
-  <nav class="footer-col">
-    <h3 class="footer-heading">contact us</h3>
-    <address class="footer-address">King George VI Av. /AR_06_1002
-      Av. , Addis Ababa University ,4 kilo
-      campas.
-      </address>
-    <a href="tel:+251920123302" class="footer-nav-link">+251-920-123-302</a>
-    <a href="mailto:natnaell70a@gmail.com" class="footer-nav-link"> natnaell70a@gmail.com</a>
-  </nav>
-
-  <nav class="footer-col">
-    <h3 class="footer-heading">Overview</h3>
-    <ul class="footer-nav-links">
-    <li class="footer-nav-item">
-      <a class="footer-nav-link" href="../index.html">Home</a>
-    </li>
-    <li class="footer-nav-item">
-      <a class="footer-nav-link" href="#">Features</a>
-    </li>
-    <li class="footer-nav-item">
-      <a class="footer-nav-link" href="./pricing.html">Pricing</a>
-    </li>
-    <li class="footer-nav-item">
-      <a class="footer-nav-link" href="./FAQ.html">FAQ</a>
-    </li>
-  </ul>
-  </nav>
-   
-  <nav class="footer-col">
-    <h3 class="footer-heading">Account</h3>
-    <ul class="footer-nav-links">
-    <li class="footer-nav-item">
-      <a class="footer-nav-link" href="../index.html#getStarted">Create account</a>
-    </li>
-    <li class="footer-nav-item">
-      <a class="footer-nav-link" href="./signin.html">Sign in</a>
-    </li>
-  </ul>
-  </nav>
-
-  <nav class="footer-col">
-    <h3 class="footer-heading">Support</h3>
-    <ul class="footer-nav-links">
-    <li class="footer-nav-item">
-      <a class="footer-nav-link" href="./contact.html">Contact Us</a>
-    </li>
-    <li class="footer-nav-item">
-      <a class="footer-nav-link" href="./about.html">About Us</a>
-    </li>
-  </ul>
-  </nav>
-</footer>
+  </footer>
   </body>
 </html>
 </div>

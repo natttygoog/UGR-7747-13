@@ -7,52 +7,71 @@
     <link href="../font-awesome/css/fontawesome.css" rel="stylesheet" />
     <!-- I use font-awesome icons ,because they are easy use and make my code clean. -->
     <link href="../font-awesome/css/all.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/style.css">
-    <script type="module" defer src="../script/menuScript.js"></script>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <script
+      defer
+      src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+    ></script>
     <title>HiChat | Pricing.</title>
 
   </head>
   <body class="pricing-page">
     <!-- page header -->
-    <header class="header header-mode header-sticky">
-      <nav class="nav">
-        <div class="nav-logo">
-          <a href="#">
+    <header class="header border-bottom position-fixed w-100" style="z-index: 2;">
+      <nav class="navbar navbar-expand-lg bg-light" >
+        <div class="container">
+          <a class="navbar-brand me-5" href="#">
             <i class="nav-logo__icon fa-brands fa-rocketchat"></i>
             <span class="nav-logo__title">HiChat</span>
           </a>
-        </div>
-        <div class="nav-link-box">
-          <ul class="nav-links">
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./features.html">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./FAQ.html">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contact.html">Contacts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./about.html">About us</a>
-            </li>
-            <li class="nav-item nav-item__signin">
-              <a class="btn btn--border" href="./signin.html">Sign in</a>
-            </li>
-            <li class="nav-item">
-              <a class="btn btn--fill" href="../index.html#getStarted">Get started</a>
-            </li>
-            <i class="nav-close fa-regular fa-circle-xmark"></i>
-          </ul>
-        </div>
-        <div class="nav-hum-berger">
-          <i class="fa-solid fa-bars"></i>
+          <button
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav"
+            aria-controls="nav"
+            aria-label="Expand Navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="nav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link " href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./features.html">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./FAQ.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contacts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About us</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav">
+              <li class="nav-item me-3 mb-3 mb-lg-0">
+                <a class="btn btn-outline-dark" href="./signin.html"
+                  >Sign in</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-dark" href="../index.html#getStarted">Get started</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
@@ -61,242 +80,263 @@
 
 
     <!-- pricing-section -->
-    <section class="section-pricing">
-     
-           <h2 class="heading-secondary u-center">Pricing</h2>
-           <p class="pricing-text">
+    <section class="p-5">
+     <div class="container p-5">
+           <h2 class="text-center">Pricing</h2>
+           <p class="text-center mb-5">
             We have comofortable pricing packages. you can compare different prices and choose what you fit.
            </p>
 
-        <div class="prices-all grid grid-col-3">
-        <div class="pricing-box">
-          <h2 class="pricing-heading">Standard</h2>
+      <div class="container">
+        <div class="row justify-content-center gap-4">
+        <div class="col-lg-4  col-xl-3 card text-center pt-5 pb-5 p-2">
+          <h2 class="card-title">Standard</h2>
 
-          <p class="pricing-value">$19</p>
-          <p class="pricing-description">per month ,$0.74 per day.</p>
-          <a class="btn btn--fill" href="#"> Add to Cart</a>
-          <ul class="pricing-details">
-            <li class="pricing-detail-item">
-              <i class="pricing-icon fa-regular fa-shield-check"></i>
+          <p class="fs-1">$19</p>
+          <p class="card-text">per month ,$0.74 per day.</p>
+          <a class="btn btn-dark w-50 m-auto mb-5" href="#"> Add to Cart</a>
+          <ul class="list-unstyled text-start ms-5">
+            <li class=" mb-2">
+              <i class="me-2 fa-regular fa-shield-check"></i>
               <span class="detail-text">2GB-storage</span>
             </li>
-            <li class="pricing-detail-item">
-              <i class="pricing-icon fa-regular fa-shield-check"></i>
+            <li class=" mb-2">
+              <i class="me-2 fa-regular fa-shield-check"></i>
               <span class="detail-text">hide profile</span></li>
-            <li class="pricing-detail-item">
-              <i class="pricing-icon fa-regular fa-shield-check"></i>
+            <li class="mb-2">
+              <i class="me-2 fa-regular fa-shield-check"></i>
               <span class="detail-text">unlimited groups</span>
             </li>
-            <li class="pricing-detail-item">
-              <i class="pricing-icon fa-regular fa-shield-check"></i>
+            <li class="mb-2">
+              <i class="me-2 fa-regular fa-shield-check"></i>
               <span class="detail-text">create contacts</span>
               </li>
           </ul>
         </div>
       
-       <div class="pricing-box pricing-box--premium">
-          <h2 class="pricing-heading">Premium</h2>
-          <p class="pricing-value">$49</p>
-          <p class="pricing-description">per month ,$1.50 per day.</p>
-          <a class="btn btn--fill" href="#"> Add to Cart</a>
-          <ul class="pricing-details">
-            <li class="pricing-detail-item">
-              <i class="pricing-icon fa-regular fa-shield-check"></i>
+       <div class=" col-lg-4  col-xl-3 card text-center pt-5 pb-5 p-2">
+          <h2 class="card-title">Premium</h2>
+          <p class="fs-1">$49</p>
+          <p class="card-text">per month ,$1.50 per day.</p>
+          <a class="btn btn-dark w-50 m-auto mb-5" href="#"> Add to Cart</a>
+          <ul class="list-unstyled text-start ms-5">
+            <li class="mb-2">
+              <i class="me-2 fa-regular fa-shield-check"></i>
               <span class="detail-text">Unlimited storage</span>
             </li>
-            <li class="pricing-detail-item">
-              <i class="pricing-icon fa-regular fa-shield-check"></i>
+            <li class="mb-2">
+              <i class="me-2  fa-regular fa-shield-check"></i>
               <span class="detail-text">hide profile</span></li>
-            <li class="pricing-detail-item">
-              <i class="pricing-icon fa-regular fa-shield-check"></i>
+            <li class="mb-2">
+              <i class="me-2  fa-regular fa-shield-check"></i>
               <span class="detail-text"> unlimited groups</span>
             </li>
-            <li class="pricing-detail-item">
-              <i class="pricing-icon fa-regular fa-shield-check"></i>
+            <li class="mb-2">
+              <i class="me-2 fa-regular fa-shield-check"></i>
               <span class="detail-text">create contacts</span>
               </li>
           </ul>
         </div>
 
-        <div class="pricing-box">
-          <h2 class="pricing-heading">Free</h2>
-          <p class="pricing-value">$0</p>
-          <p class="pricing-description">per month, $0 per day.</p>
-          <a class="btn btn--fill" href="#"> Add to Cart</a>
-          <ul class="pricing-details">
-            <li class="pricing-detail-item">
-              <i class="pricing-icon fa-regular fa-shield-check"></i>
+        <div class=" col-lg-4 col-xl-3 card text-center pt-5 pb-5 p-2">
+          <h2 class="card-title">Free</h2>
+          <p class="fs-1">$0</p>
+          <p class="card-text">per month, $0 per day.</p>
+          <a class="btn btn-dark w-50 m-auto mb-5" href="#"> Add to Cart</a>
+          <ul class="list-unstyled text-start ms-5">
+            <li class="mb-2">
+              <i class="me-2 fa-regular fa-shield-check"></i>
               <span>512MB-storage</span>
             </li>
-            <li class="pricing-detail-item">
+            <li class="mb-2">
               
-              <i class="pricing-icon fa-regular fa-shield-xmark"></i>
+              <i class="me-2 fa-regular fa-shield-xmark"></i>
               <span>No hide profile</span></li>
-            <li class="pricing-detail-item">
-              <i class="pricing-icon fa-regular fa-shield-xmark"></i>
+            <li class="mb-2">
+              <i class="me-2 fa-regular fa-shield-xmark"></i>
               <span> limited groups</span>
             </li>
-            <li class="pricing-detail-item">
-              <i class="pricing-icon fa-regular fa-shield-check"></i>
+            <li class="mb-2">
+              <i class="me-2 fa-regular fa-shield-check"></i>
               <span>create contacts</span>
               </li>
           </ul>
         </div>
+      </div>
        </div>
+      </div>
     </section>
 
     <!-- price compare section -->
-    <section class="section-price-compare">
-      <h2 class="heading-secondary u-center">Comparing Prices</h2>
-        <table class="price-compare">
-            <thead class="price-compare--head">
+    <section class="p-lg-5 border-top">
+      <h2 class="text-center">Comparing Prices</h2>
+      <div class="container p-lg-5 ">
+        <table class="table table-striped">
+            <thead class=" fs-4 text-capitalize">
             <tr>
-             <th>*</th>
-             <th>Standard</th>
-             <th>Premium</th>
-             <th>Free</th>
+             <th><span class="d-none">*</span></th>
+             <th class="text-center">Standard</th>
+             <th class="text-center">Premium</th>
+             <th class="text-center">Free</th>
             </tr>
             </thead>
-            <tbody class="price-compare--body">
+            <tbody class="">
                <tr>
                 <td>Cloud storage</td>
-                <td> <i class="fa-regular fa-circle-check"></i> </td>
-                <td> <i class="fa-regular fa-circle-xmark"></i> </td>
-                <td> <i class="fa-regular fa-circle-xmark"></i> </td>
+                <td class="text-center"> <i class="fa-regular fa-circle-check"></i> </td>
+                <td class="text-center"> <i class="fa-regular fa-circle-xmark"></i> </td>
+                <td class="text-center"> <i class="fa-regular fa-circle-xmark"></i> </td>
                </tr>
 
                <tr>
                 <td>Profile hide</td>
-                <td> <i class="fa-regular fa-circle-check"></i> </td>
-                <td> <i class="fa-regular fa-circle-check"></i> </td>
-                <td> <i class="fa-regular fa-circle-xmark"></i> </td>
+                <td class="text-center"> <i class="fa-regular fa-circle-check"></i> </td>
+                <td class="text-center"> <i class="fa-regular fa-circle-check"></i> </td>
+                <td class="text-center"> <i class="fa-regular fa-circle-xmark"></i> </td>
                </tr>
 
                <tr>
                 <td> Unlimited groups </td>
-                <td> <i class="fa-regular fa-circle-check"></i> </td>
-                <td> <i class="fa-regular fa-circle-check"></i> </td>
-                <td> <i class="fa-regular fa-circle-xmark"></i> </td>
+                <td class="text-center"> <i class="fa-regular fa-circle-check"></i> </td>
+                <td class="text-center"> <i class="fa-regular fa-circle-check"></i> </td>
+                <td class="text-center"> <i class="fa-regular fa-circle-xmark"></i> </td>
                </tr>
 
                <tr>
                 <td> Unlimited contacts</td>
-                <td> <i class="fa-regular fa-circle-check"></i> </td>
-                <td> <i class="fa-regular fa-circle-check"></i> </td>
-                <td> <i class="fa-regular fa-circle-check"></i> </td>
+                <td class="text-center"> <i class="fa-regular fa-circle-check"></i> </td>
+                <td class="text-center"> <i class="fa-regular fa-circle-check"></i> </td>
+                <td class="text-center"> <i class="fa-regular fa-circle-check"></i> </td>
                </tr>
 
                <tr>
                 <td>Night mode</td>
-                <td> <i class="fa-regular fa-circle-check"></i> </td>
-                <td> <i class="fa-regular fa-circle-check"></i> </td>
-                <td> <i class="fa-regular fa-circle-check"></i> </td>
+                <td class="text-center"> <i class="fa-regular fa-circle-check"></i> </td>
+                <td class="text-center"> <i class="fa-regular fa-circle-check"></i> </td>
+                <td class="text-center"> <i class="fa-regular fa-circle-check"></i> </td>
                </tr>
 
                <tr>
                 <td>Advanced security</td>
-                <td> <i class="fa-regular fa-circle-check"></i> </td>
-                <td> <i class="fa-regular fa-circle-xmark"></i> </td>
-                <td> <i class="fa-regular fa-circle-xmark"></i> </td>
+                <td class="text-center"> <i class="fa-regular fa-circle-check"></i> </td>
+                <td class="text-center"> <i class="fa-regular fa-circle-xmark"></i> </td>
+                <td class="text-center"> <i class="fa-regular fa-circle-xmark"></i> </td>
                </tr>
 
                <tr>
-                <td>Unlimited tabs
-                </td>
-                <td> <i class="fa-regular fa-circle-check"></i> </td>
-                <td> <i class="fa-regular fa-circle-check"></i> </td>
-                <td> <i class="fa-regular fa-circle-check"></i> </td>
+                <td>Unlimited tabs</td>
+                <td class="text-center"> <i class="fa-regular fa-circle-check"></i> </td>
+                <td class="text-center"><i class="fa-regular fa-circle-check"></i> </td>
+                <td class="text-center"> <i class="fa-regular fa-circle-check"></i> </td>
                </tr>
 
                <tr>
                 <td>Unlimited tages</td>
-                <td> <i class="fa-regular fa-circle-check"></i> </td>
-                <td> <i class="fa-regular fa-circle-check"></i> </td>
-                <td> <i class="fa-regular fa-circle-xmark"></i> </td>
+                <td class="text-center"> <i class="fa-regular fa-circle-check"></i> </td>
+                <td class="text-center"> <i class="fa-regular fa-circle-check"></i> </td>
+                <td class="text-center"> <i class="fa-regular fa-circle-xmark"></i> </td>
                </tr>
                <tr>
                 <td>Interactive themes</td>
-                <td> <i class="fa-regular fa-circle-check"></i> </td>
-                <td> <i class="fa-regular fa-circle-check"></i> </td>
-                <td> <i class="fa-regular fa-circle-check"></i> </td>
+                <td class="text-center"> <i class="fa-regular fa-circle-check"></i> </td>
+                <td class="text-center"><i class="fa-regular fa-circle-check"></i> </td>
+                <td class="text-center"><i class="fa-regular fa-circle-check"></i> </td>
                </tr>
             </tbody>
         </table>
+      </div>
     </section>
   </main>
 
     <!-- page footer -->
-    <footer class="section-footer">
-    
-      <div class="footer-col">
-        <div class="nav-logo">
-        <a  href="#">
-          <i class="nav-logo__icon fa-brands fa-rocketchat"></i>
-          <span class="nav-logo__title">HiChat</span>
-        </a>
-      </div>
-        <div class="footer-social-media">
-          <a href="www.facebook.com/natty"> <i class="fa-brands fa-facebook"></i> <span>facebook</span> </a>
-          <a href="www.facebook.com/messager/natty"> <i class="fa-brands fa-facebook-messenger"></i><span>messager</span> </a>
-          <a href="www.twitter.com/natty"> <i class="fa-brands fa-twitter"></i> <span>twitter</span> </a>
-          <a href="www.linkdin.com/natty"><i class="fa-brands fa-linkedin"></i><span>linkdin</span></a>
+    <footer class="p-5 bg-info">
+      <div class="container p-5">
+        <div class="row gy-5">
+          <div class="col-xl-3 col-lg-6 d-flex flex-column">
+            <div>
+              <a class="navbar-brand fs-2" href="#">
+                <i class="nav-logo__icon fa-brands fa-rocketchat"></i>
+                <span class="nav-logo__title">HiChat</span>
+              </a>
+            </div>
+            <div class="d-flex fs-2 gap-2">
+              <a class="nav-link" href="www.facebook.com/natty">
+                <i class="fa-brands fa-facebook"></i>
+                <span class="d-none">facebook</span>
+              </a>
+              <a class="nav-link" href="www.facebook.com/messager/natty">
+                <i class="fa-brands fa-facebook-messenger"></i
+                ><span class="d-none">messager</span>
+              </a>
+              <a class="nav-link" href="www.twitter.com/natty">
+                <i class="fa-brands fa-twitter"></i>
+                <span class="d-none">twitter</span>
+              </a>
+              <a class="nav-link" href="www.linkdin.com/natty"
+                ><i class="fa-brands fa-linkedin"></i
+                ><span class="d-none">linkdin</span></a
+              >
+            </div>
+            <p class="mt-auto">
+              Copyright &copy; 2022 by , HiChat Inc. All rightsreserved.
+            </p>
+          </div>
+          <nav class="col-xl-3 col-lg-6">
+            <h3 class="mb-4">contact us</h3>
+            <address class="">
+              King George VI Av. /AR_06_1002 Av. , Addis Ababa University ,4
+              kilo campas.
+            </address>
+            <a href="tel:+251920123302" class="nav-link">+251-920-123-302</a>
+            <a href="mailto:natnaell70a@gmail.com" class="nav-link">
+              natnaell70a@gmail.com</a
+            >
+          </nav>
+  
+          <nav class="col-xl-2 col-lg-4">
+            <h3 class="mb-4">Overview</h3>
+            <ul class="list-unstyled">
+              <li>
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li>
+                <a class="nav-link" href="./features.html">Features</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li>
+                <a class="nav-link" href="./FAQ.html">FAQ</a>
+              </li>
+            </ul>
+          </nav>
+  
+          <nav class="col-xl-2 col-lg-4">
+            <h3 class="mb-4">Account</h3>
+            <ul class="list-unstyled">
+              <li>
+                <a class="nav-link" href="../index.html#getStarted">Create account</a>
+              </li>
+              <li>
+                <a class="nav-link" href="./signin.html">Sign in</a>
+              </li>
+            </ul>
+          </nav>
+  
+          <nav class="col-xl-2 col-sm-4">
+            <h3 class="mb-4">Support</h3>
+            <ul class="list-unstyled">
+              <li>
+                <a class="nav-link" href="./contact.html">Contact Us</a>
+              </li>
+              <li>
+                <a class="nav-link" href="./about.html">About Us</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <p class="footer-copyright">
-          Copyright &copy; 2022 by , HiChat Inc. All rightsreserved.
-        </p>
       </div>
-    <nav class="footer-col">
-      <h3 class="footer-heading">contact us</h3>
-      <address class="footer-address">King George VI Av. /AR_06_1002
-        Av. , Addis Ababa University ,4 kilo
-        campas.
-        </address>
-      <a href="tel:+251920123302" class="footer-nav-link">+251-920-123-302</a>
-      <a href="mailto:natnaell70a@gmail.com" class="footer-nav-link"> natnaell70a@gmail.com</a>
-    </nav>
-  
-    <nav class="footer-col">
-      <h3 class="footer-heading">Overview</h3>
-      <ul class="footer-nav-links">
-      <li class="footer-nav-item">
-        <a class="footer-nav-link" href="../index.html">Home</a>
-      </li>
-      <li class="footer-nav-item">
-        <a class="footer-nav-link" href="./features.html">Features</a>
-      </li>
-      <li class="footer-nav-item">
-        <a class="footer-nav-link" href="#">Pricing</a>
-      </li>
-      <li class="footer-nav-item">
-        <a class="footer-nav-link" href="./FAQ.html">FAQ</a>
-      </li>
-    </ul>
-    </nav>
-     
-    <nav class="footer-col">
-      <h3 class="footer-heading">Account</h3>
-      <ul class="footer-nav-links">
-      <li class="footer-nav-item">
-        <a class="footer-nav-link" href="../index.html#getStarted">Create account</a>
-      </li>
-      <li class="footer-nav-item">
-        <a class="footer-nav-link" href="./signin.html">Sign in</a>
-      </li>
-    </ul>
-    </nav>
-  
-    <nav class="footer-col">
-      <h3 class="footer-heading">Support</h3>
-      <ul class="footer-nav-links">
-      <li class="footer-nav-item">
-        <a class="footer-nav-link" href="./contact.html">Contact Us</a>
-      </li>
-      <li class="footer-nav-item">
-        <a class="footer-nav-link" href="./about.html">About Us</a>
-      </li>
-    </ul>
-    </nav>
-  </footer>
+    </footer>
   </body>
 </html>
 </div>

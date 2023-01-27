@@ -10,206 +10,287 @@
     <link href="../font-awesome/css/all.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css">
     <script  type="module"  defer src="../script/FQAscript .js"></script>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <script
+      defer
+      src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+    ></script>
     <title>HiChat | FAQ.</title>
   </head>
   <body>
     <!-- header -->
-    <header class="header header-mode header-sticky">
-      <nav class="nav">
-        <div class="nav-logo">
-          <a href="#">
+    <header class="header border-bottom position-fixed w-100" style="z-index: 2;">
+      <nav class="navbar navbar-expand-lg bg-light" >
+        <div class="container">
+          <a class="navbar-brand me-5" href="#">
             <i class="nav-logo__icon fa-brands fa-rocketchat"></i>
             <span class="nav-logo__title">HiChat</span>
           </a>
-        </div>
-        <div class="nav-link-box">
-          <ul class="nav-links">
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./features.html">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pricing.html">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contact.html">Contacts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./about.html">About us</a>
-            </li>
-            <li class="nav-item nav-item__signin">
-              <a class="btn btn--border" href="./signin.html">Sign in</a>
-            </li>
-            <li class="nav-item">
-              <a class="btn btn--fill" href="../index.html#getStarted">Get started</a>
-              <i class="nav-close fa-regular fa-circle-xmark"></i>
+          <button
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav"
+            aria-controls="nav"
+            aria-label="Expand Navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="nav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link " href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./features.html">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contacts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About us</a>
+              </li>
             </ul>
-          </div>
-          <div class="nav-hum-berger">
-            <i class="fa-solid fa-bars"></i>
+
+            <ul class="navbar-nav">
+              <li class="nav-item me-3 mb-3 mb-lg-0">
+                <a class="btn btn-outline-dark" href="./signin.html"
+                  >Sign in</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-dark" href="../index.html#getStarted">Get started</a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
     </header>
 
     <main>
-     <section class="section-fqa">
-      <h2 class="heading-secondary u-center">Fast Question and Answer</h2>
-      <p class="pricing-text">
+     <section class="p-lg-5 pt-5 pb-5">
+      <div class="container p-lg-5 pt-5 pb-5">
+      <h2 class="text-center">Fast Question and Answer</h2>
+      <p class="text-center mb-5">
     This is a FAQ area, you can get fast answer for you Questions,
       </p>
-
-        <ul class="fqa">
-            <li class="fqa-item">
-              <p class="fqa-number">01</p>
-              <h2 class="fqa-heading">What is chatbot?</h2>
+        <ul class="d-flex flex-column gap-4">
+            <li class="card ">
+              <div class="d-flex gap-5 align-items-center ps-4 pe-4" 
+              data-bs-toggle="collapse"
+               data-bs-target="#content1" 
+              aria-expanded="false"
+              aria-controls="content1">
+              <p class="fs-2 pt-2">01</p>
+              <h5 class="flex-grow-1">What is chatbot?</h5>
               <i class="fqa-icon fa-regular fa-chevron-down"></i>
-              <div class="fqa-content-box hidden">
-                <p class="fqa-content">
+            </div>
+              <div id="content1" class="row collapse p-3  ">
+                <p class="col">
                     A computer program designed to simulate conversation with human users, especially over the internet.
                 </p>
               </div>
             </li>
 
-            <li class="fqa-item">
-                <p class="fqa-number">02</p>
-                <h2 class="fqa-heading">Whare can I get setting in HiChat?</h2>
-                <i class="fqa-icon fa-regular fa-chevron-down"></i>
-                <div class="fqa-content-box">
-                <p class="fqa-content">
-                    First click the hum-berger menu on on the front page and then, setting is putting at the end of the list coming.
+            <li class="card ">
+              <div class="d-flex gap-5 align-items-center ps-4 pe-4" 
+              data-bs-toggle="collapse"
+               data-bs-target="#content2" 
+              aria-expanded="false"
+              aria-controls="content2">
+              <p class="fs-2 pt-2">02</p>
+              <h5 class="flex-grow-1">Whare can I get setting in HiChat?</h5>
+              <i class="fqa-icon fa-regular fa-chevron-down"></i>
+            </div>
+              <div id="content2" class="row collapse p-3  ">
+                <p class="col">
+                  First click the hum-berger menu on on the front page and then, setting is putting at the end of the list coming.
                 </p>
-                </div>
+              </div>
             </li>
-            
-            <li class="fqa-item">
-                <p class="fqa-number">03</p>
-                <h2 class="fqa-heading">What is the best pricing package?</h2>
-                <i class="fqa-icon fa-regular fa-chevron-down"></i>
-                <div class="fqa-content-box hidden">
-                  <p class="fqa-content">
-                    The premium packages <br />
-                      The premium packages contents all features and having advanced security.
-                  </p>
-                </div>
-              </li>
-
-              <li class="fqa-item">
-                <p class="fqa-number">04</p>
-                <h2 class="fqa-heading">What is web live chat?</h2>
-                <i class="fqa-icon fa-regular fa-chevron-down"></i>
-                <div class="fqa-content-box hidden">
-                  <p class="fqa-content">
-                    Live web chat is a type of web-based communication that happens in real-time. People that utilize live web chat can exchange text messages, photos, videos, links, GIFs, and emojis.
-                  </p>
-                </div>
-              </li>
-
-              <li class="fqa-item">
-                <p class="fqa-number">05</p>
-                <h2 class="fqa-heading">Is the free package is good?</h2>
-                <i class="fqa-icon fa-regular fa-chevron-down"></i>
-                <div class="fqa-content-box hidden">
-                  <p class="fqa-content">
-                    Yes of course, it does not a few features, but most customers use the free package. they give us a good feedback.
-                  </p>
-                </div>
-              </li>
 
 
-              <li class="fqa-item">
-                <p class="fqa-number">06</p>
-                <h2 class="fqa-heading">What does cloud storage mean?</h2>
-                <i class="fqa-icon fa-regular fa-chevron-down"></i>
-                <div class="fqa-content-box hidden">
-                  <p class="fqa-content">
-                    Cloud storage is a cloud computing model that enables storing data and files on the internet through a cloud computing provider that you access either through the public internet or a dedicated private network connection.
-                  </p>
-                </div>
-              </li>
+            <li class="card ">
+              <div class="d-flex gap-5 align-items-center ps-4 pe-4" 
+              data-bs-toggle="collapse"
+               data-bs-target="#content3" 
+              aria-expanded="false"
+              aria-controls="content3">
+              <p class="fs-2 pt-2">03</p>
+              <h5 class="flex-grow-1">What is the best pricing package?</h5>
+              <i class="fqa-icon fa-regular fa-chevron-down"></i>
+            </div>
+              <div id="content3" class="row collapse p-3  ">
+                <p class="col">
+                  The premium packages <br />
+                  The premium packages contents all features and having advanced secure.
+                </p>
+              </div>
+            </li>
+
+
+            <li class="card ">
+              <div class="d-flex gap-5 align-items-center ps-4 pe-4" 
+              data-bs-toggle="collapse"
+               data-bs-target="#content4" 
+              aria-expanded="false"
+              aria-controls="content4">
+              <p class="fs-2 pt-2">04</p>
+              <h5 class="flex-grow-1">What is web live chat?</h5>
+              <i class="fqa-icon fa-regular fa-chevron-down"></i>
+            </div>
+              <div id="content4" class="row collapse p-3  ">
+                <p class="col">
+                  Live web chat is a type of web-based communication that happens in real-time. People that utilize live web chat can exchange text messages, photos, videos, links, GIFs, and emojis.
+                </p>
+              </div>
+            </li>
+
+
+            <li class="card ">
+              <div class="d-flex gap-5 align-items-center ps-4 pe-4" 
+              data-bs-toggle="collapse"
+               data-bs-target="#content5" 
+              aria-expanded="false"
+              aria-controls="content5">
+              <p class="fs-2 pt-2">05</p>
+              <h5 class="flex-grow-1">Is the free package is good?</h5>
+              <i class="fqa-icon fa-regular fa-chevron-down"></i>
+            </div>
+              <div id="content5" class="row collapse p-3 ">
+                <p class="col">
+                  Yes of course, it does not a few features, but most customers use the free package. they give us a good feedback.
+                </p>
+              </div>
+            </li>
+
+
+            <li class="card ">
+              <div class="d-flex gap-5 align-items-center ps-4 pe-4" 
+              data-bs-toggle="collapse"
+               data-bs-target="#content6" 
+              aria-expanded="false"
+              aria-controls="content6">
+              <p class="fs-2 pt-2">06</p>
+              <h5 class="flex-grow-1">What does cloud storage mean?</h5>
+              <i class="fqa-icon fa-regular fa-chevron-down"></i>
+            </div>
+              <div id="content6" class="row collapse p-3  ">
+                <p class="col">
+                  Cloud storage is a cloud computing model that enables storing data and files on the internet through a cloud computing provider that you access either through the public internet or a dedicated private network connection.
+                </p>
+              </div>
+            </li>
+
+           
 
    </ul>
+
+  </div>
      </section>
 
   </main>
 
   <!--page footer  -->
-  <footer class="section-footer">
-    
-    <div class="footer-col">
-      <div class="nav-logo">
-      <a  href="#">
-        <i class="nav-logo__icon fa-brands fa-rocketchat"></i>
-        <span class="nav-logo__title">HiChat</span>
-      </a>
-    </div>
-      <div class="footer-social-media">
-        <a href="www.facebook.com/natty"> <i class="fa-brands fa-facebook"></i> <span>facebook</span> </a>
-        <a href="www.facebook.com/messager/natty"> <i class="fa-brands fa-facebook-messenger"></i><span>messager</span> </a>
-        <a href="www.twitter.com/natty"> <i class="fa-brands fa-twitter"></i> <span>twitter</span> </a>
-        <a href="www.linkdin.com/natty"><i class="fa-brands fa-linkedin"></i><span>linkdin</span></a>
+  <footer class="p-5 bg-info">
+    <div class="container p-5">
+      <div class="row gy-5">
+        <div class="col-xl-3 col-lg-6 d-flex flex-column">
+          <div>
+            <a class="navbar-brand fs-2" href="#">
+              <i class="nav-logo__icon fa-brands fa-rocketchat"></i>
+              <span class="nav-logo__title">HiChat</span>
+            </a>
+          </div>
+          <div class="d-flex fs-2 gap-2">
+            <a class="nav-link" href="www.facebook.com/natty">
+              <i class="fa-brands fa-facebook"></i>
+              <span class="d-none">facebook</span>
+            </a>
+            <a class="nav-link" href="www.facebook.com/messager/natty">
+              <i class="fa-brands fa-facebook-messenger"></i
+              ><span class="d-none">messager</span>
+            </a>
+            <a class="nav-link" href="www.twitter.com/natty">
+              <i class="fa-brands fa-twitter"></i>
+              <span class="d-none">twitter</span>
+            </a>
+            <a class="nav-link" href="www.linkdin.com/natty"
+              ><i class="fa-brands fa-linkedin"></i
+              ><span class="d-none">linkdin</span></a
+            >
+          </div>
+          <p class="mt-auto">
+            Copyright &copy; 2022 by , HiChat Inc. All rightsreserved.
+          </p>
+        </div>
+        <nav class="col-xl-3 col-lg-6">
+          <h3 class="mb-4">contact us</h3>
+          <address class="">
+            King George VI Av. /AR_06_1002 Av. , Addis Ababa University ,4
+            kilo campas.
+          </address>
+          <a href="tel:+251920123302" class="nav-link">+251-920-123-302</a>
+          <a href="mailto:natnaell70a@gmail.com" class="nav-link">
+            natnaell70a@gmail.com</a
+          >
+        </nav>
+
+        <nav class="col-xl-2 col-lg-4">
+          <h3 class="mb-4">Overview</h3>
+          <ul class="list-unstyled">
+            <li>
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li>
+              <a class="nav-link" href="./features.html">Features</a>
+            </li>
+            <li>
+              <a class="nav-link" href="./pricing.html">Pricing</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="col-xl-2 col-lg-4">
+          <h3 class="mb-4">Account</h3>
+          <ul class="list-unstyled">
+            <li>
+              <a class="nav-link" href="../index.html#getStarted">Create account</a>
+            </li>
+            <li>
+              <a class="nav-link" href="./signin.html">Sign in</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="col-xl-2 col-sm-4">
+          <h3 class="mb-4">Support</h3>
+          <ul class="list-unstyled">
+            <li>
+              <a class="nav-link" href="./contact.html">Contact Us</a>
+            </li>
+            <li>
+              <a class="nav-link" href="./about.html">About Us</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <p class="footer-copyright">
-        Copyright &copy; 2022 by , HiChat Inc. All rightsreserved.
-      </p>
     </div>
-  <nav class="footer-col">
-    <h3 class="footer-heading">contact us</h3>
-    <address class="footer-address">King George VI Av. /AR_06_1002
-      Av. , Addis Ababa University ,4 kilo
-      campas.
-      </address>
-    <a href="tel:+251920123302" class="footer-nav-link">+251-920-123-302</a>
-    <a href="mailto:natnaell70a@gmail.com" class="footer-nav-link"> natnaell70a@gmail.com</a>
-  </nav>
-
-  <nav class="footer-col">
-    <h3 class="footer-heading">Overview</h3>
-    <ul class="footer-nav-links">
-    <li class="footer-nav-item">
-      <a class="footer-nav-link" href="../index.html">Home</a>
-    </li>
-    <li class="footer-nav-item">
-      <a class="footer-nav-link" href="./features.html">Features</a>
-    </li>
-    <li class="footer-nav-item">
-      <a class="footer-nav-link" href="./pricing.html">Pricing</a>
-    </li>
-    <li class="footer-nav-item">
-      <a class="footer-nav-link" href="#">FAQ</a>
-    </li>
-  </ul>
-  </nav>
-   
-  <nav class="footer-col">
-    <h3 class="footer-heading">Account</h3>
-    <ul class="footer-nav-links">
-    <li class="footer-nav-item">
-      <a class="footer-nav-link" href="../index.html#getStarted">Create account</a>
-    </li>
-    <li class="footer-nav-item">
-      <a class="footer-nav-link" href="./signin.html">Sign in</a>
-    </li>
-  </ul>
-  </nav>
-
-  <nav class="footer-col">
-    <h3 class="footer-heading">Support</h3>
-    <ul class="footer-nav-links">
-    <li class="footer-nav-item">
-      <a class="footer-nav-link" href="./contact.html">Contact Us</a>
-    </li>
-    <li class="footer-nav-item">
-      <a class="footer-nav-link" href="./about.html">About Us</a>
-    </li>
-  </ul>
-  </nav>
-</footer>
+  </footer>
   </body>
 </html>
 </div>

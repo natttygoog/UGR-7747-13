@@ -1,5 +1,5 @@
 "use strict";
-import { Menu } from "./menuScript.js";
+// import { Menu } from "./menuScript.js";
 const btnPlay = document.querySelector(".intro-video-play-btn");
 const btnclose = document.querySelector(".intro-close");
 const overlay = document.querySelector(".overlay");
@@ -17,16 +17,6 @@ const inputEmail = document.querySelector(".form-input--email");
 const header = document.querySelector(".header");
 const inputPassword = document.querySelector(".form-input--password");
 const sectionHero = document.querySelector(".section-hero");
-const inputConfirmPassword = document.querySelector(
-  ".form-input--confirm-password"
-);
-const passwordValidation = document.querySelector(".form-Validation-password");
-const ConfirmPasswordValidation = document.querySelector(
-  ".form-Validation-confirm-password"
-);
-const nameValidation = document.querySelector(".form-Validation-name");
-const emailValidation = document.querySelector(".form-Validation-email");
-const btnCreateAccount = document.querySelector(".btn--create-account");
 
 class App {
   audioPlay = false;
@@ -38,7 +28,6 @@ class App {
   constructor() {
     btnPlay.addEventListener("click", this.playVideo);
     btnclose.addEventListener("click", this.pauseVideo);
-    overlay.addEventListener("click", this.removeOverlay);
     btnAudioPlay.addEventListener("click", this.audioToggle.bind(this));
     this.getWidth();
     this.init();
@@ -51,17 +40,15 @@ class App {
       "click",
       this.cricleBtnMove.bind(this)
     );
-    btnCreateAccount.addEventListener("click", this.createAccount.bind(this));
-    this.stickyNav();
+    // btnCreateAccount.addEventListener("click", this.createAccount.bind(this));
+    // this.stickyNav();
   }
 
   playVideo() {
-    document.body.classList.add("video-active");
     video.play();
   }
   pauseVideo() {
     video.pause();
-    document.body.classList.remove("video-active");
   }
   removeOverlay() {
     video.pause();
@@ -104,7 +91,7 @@ class App {
     let a = 0.8 * this.width * 0.46;
     let b = 0.8 * this.width * 0.8;
     let c = b / a;
-    if (this.width > 966) {
+    if (this.width > 1100) {
       this.width = 100 + 10 * c;
     } else {
       this.width = 100;
@@ -166,80 +153,6 @@ class App {
     }
   }
 
-  createAccount(e) {
-    e.preventDefault();
-    const userName = inputUsername.value;
-    const email = inputEmail.value;
-    const password = inputPassword.value;
-    const ConfirmPassword = inputConfirmPassword.value;
-    nameValidation.textContent =
-      emailValidation.textContent =
-      passwordValidation.textContent =
-      ConfirmPasswordValidation.textContent =
-        "";
-    const validateEmail = (email) =>
-      email
-        .toLowerCase()
-        .match(
-          /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-        );
-    if (userName === "") {
-      nameValidation.textContent = "this field is required";
-      return;
-    }
-    if (email === "") {
-      emailValidation.textContent = "this field is required";
-      return;
-    }
-    if (!validateEmail(email)) {
-      emailValidation.textContent = "invalid email";
-      return;
-    }
-    if (password === "") {
-      passwordValidation.textContent = "this field is required";
-      return;
-    }
-    if (password.length < 8) {
-      passwordValidation.textContent = " password show be 8 or more characters";
-      return;
-    }
-
-    if (ConfirmPassword === "") {
-      ConfirmPasswordValidation.textContent = "this field is required";
-      return;
-    }
-    if (ConfirmPassword !== password) {
-      ConfirmPasswordValidation.textContent = "the passwords do not match";
-      return;
-    }
-
-    const popupText = document.createElement("div");
-    popupText.classList.add("popup-text");
-    popupText.innerHTML = `<p>You create an account successfully</p>
-    <a class="btn btn--border" href="./pages/signin.html"
-    >Sing in</a
-  >
-    <button class="popup-close">
-    <i class="fa-regular fa-circle-xmark"></i>
-  </button>
-    `;
-    document.body.append(popupText);
-    document.body.classList.add("create-success");
-    document.querySelector(".popup-close").addEventListener("click", () => {
-      document.body.classList.remove("create-success");
-      popupText.remove();
-    });
-    overlay.addEventListener("click", () => {
-      document.body.classList.remove("create-success");
-      popupText.remove();
-    });
-    inputEmail.value =
-      inputUsername.value =
-      inputPassword.value =
-      inputConfirmPassword.value =
-        "";
-  }
-
   stickyNav() {
     const observer = new IntersectionObserver(
       (entries, observer) => {
@@ -258,5 +171,5 @@ class App {
     observer.observe(sectionHero);
   }
 }
-const menu = new Menu();
+// const menu = new Menu();
 const app = new App();
